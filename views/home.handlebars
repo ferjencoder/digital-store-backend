@@ -1,0 +1,18 @@
+<div>
+    <h1>Home</h1>
+
+
+    {{!-- TODO: Debe contener una lista con todos los productos agregados hasta el momento --}}
+
+    {{#each categories}}
+    <option value="{{this}}">
+        {{this}}
+    </option>
+    {{/each}}
+
+    <input id="textbox">
+    <p id="texto"></p>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/home.js"></script>

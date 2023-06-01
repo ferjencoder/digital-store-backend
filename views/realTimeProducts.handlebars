@@ -1,0 +1,85 @@
+<main class="main-container">
+
+    <h1 class="ff-secondary">Digital Store</h1>
+
+    <section class="productPage-container">
+        <section class="productsForm-section">
+
+            <form class="products-section" action="/api/products" method="post">
+                <input name="title" placeholder="Title" required />
+                <select name="category" required>
+                    <option value="">
+                        Select a category
+                    </option>
+                    {{#each categories}}
+                    <option value="{{this}}">
+                        {{this}}
+                    </option>
+                    {{/each}}
+                </select>
+                <input name="code" placeholder="Code" required />
+                <input name="demoUrl" placeholder="Demo URL" required />
+                <input name="shortDescription" placeholder="Short Description" required />
+                <input name="description" placeholder="Description" required />
+                <input name="thumbnails" placeholder="Thumbnails" required />
+                <input name="techStack" placeholder="Tech Stack" required />
+                <input name="stock" placeholder="Stock" required />
+                <input name="price" placeholder="Price" required />
+
+                <button class="btn-success ff-secondary fs-3" type="submit">
+                    {{#if selectedProduct}}
+                    Update
+                    {{else}}
+                    Create
+                    {{/if}}
+                </button>
+
+            </form>
+
+            <div>
+                <img class="form-llama"
+                    src="https://res.cloudinary.com/ferjen/image/upload/v1684735620/digital-store/llamas/Default_full_body_shot_of_a_cute_sly_llama_with_long_neck_a_mi_2_6bdb94b8-beb0-449e-888e-44af380145f8_0_pamxlo.png"
+                    alt="llama" />
+            </div>
+        </section>
+
+
+        <section class="products-section">
+
+            <button class="btn-delete ff-secondary fs-3">
+                Show All Products
+            </button>
+
+            <ul class="products-list">
+
+                {{#each products}}
+
+                <li class='product-item' data-id='{{this.id}}'>
+                    <img src="{{this.thumbnails.[0]}}" alt="Image of {{this.title}}" class='product-item__image' />
+
+                    <div class='product-item__body'>
+                        <p class='ff-secondary fs-2 ls-1'>{{this.title}}</p>
+                        <p>{{this.category}}</p>
+                        <p>{{this.shortDescription}}</p>
+                        <p>Price: {{this.price}}</p>
+                    </div>
+
+                    <div class='product-item__buttons'>
+                        <button class='btn-edit ff-secondary fs-2'>
+                            Edit
+                        </button>
+                        <button class='btn-delete ff-secondary fs-2'>
+                            Delete
+                        </button>
+                    </div>
+
+                </li>
+
+                {{/each}}
+
+            </ul>
+
+        </section>
+    </section>
+
+</main>
