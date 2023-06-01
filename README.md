@@ -1,4 +1,8 @@
 
+# Digital-Store Backend
+A real-time product management system built with Node.js and Express, featuring real-time updates with Socket.IO. The system includes features for creating, updating, and deleting products, with all changes instantly displayed to all connected clients without the need for page refreshes. It uses an Express Handlebars view engine for server-side rendering, and stores data in a JSON file for simplicity
+
+
 # Websockets + Handlebars
 ### Integrar vistas y sockets a nuestro servidor actual.
 
