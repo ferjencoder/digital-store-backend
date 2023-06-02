@@ -203,6 +203,12 @@ select {
 }
 
 
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .products-section {
     display: flex;
     flex-direction: column;
@@ -329,8 +335,9 @@ select {
   --clr-danger: #e45b5d; */
 
 .product-item__image {
-    width: 100%;
+    width: 320px;
     object-fit: cover;
+    height: 320px;
 }
 
 .form-llama {

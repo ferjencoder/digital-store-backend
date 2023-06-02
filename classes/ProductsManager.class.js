@@ -25,17 +25,23 @@ export default class ProductsManager {
 
     // CRUD operations
     async getProducts ( num ) {
+
         try {
             const products = await this.readProductsFromFile();
-            return products.slice( 0, num ?? products.length );
+            const sortedProducts = products.sort( ( a, b ) => b.id - a.id );
+
+            return sortedProducts.slice( 0, num ?? products.length );
 
         } catch ( error ) {
+
             if ( error.code === 'ENOENT' ) {
                 throw new Error( `${PRODUCTS_FILE_PATH} does not exist` );
+
             } else {
                 throw new Error( `Error => reading the products file 👩🏻‍💻 ${error.message}` );
             }
-        }
+        };
+
     };
 
     async addProduct ( product ) {
@@ -64,9 +70,11 @@ export default class ProductsManager {
 
         try {
             await this.writeProductsToFile( products );
+
         } catch ( err ) {
             throw new Error( 'Failed to save product' );
-        }
+
+        };
 
         return newProduct;
     };

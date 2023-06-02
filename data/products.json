@@ -1,398 +1,25 @@
 [
 	{
-		"id": 1,
-		"title": "Reservation Management System",
-		"category": "Management System",
+		"id": 20,
+		"title": "E-Learning Platform",
+		"category": "Education",
 		"code": "code",
-		"demoUrl": "/demo/reservation-management-system",
-		"shortDescription": "An online booking and reservation system.",
-		"description": "A system which handles table reservations, catering requests, and even event bookings. Built with React and Node.js, it includes real-time reservation tracking and booking features.",
+		"demoUrl": "/demo/e-learning-platform",
+		"shortDescription": "A comprehensive platform for online education.",
+		"description": "A comprehensive platform that enables educators to create and deliver courses online, with features for quizzes, grading, and student tracking. Built with React and Node.js, it includes course creation, quizzes, grading, and student tracking features.",
 		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684724182/digital-store/1-Reservation_Management_System-1_ngfw8a.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684724183/digital-store/1-Reservation_Management_System-2_bya5w7.jpg"
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996329/digital-store/20-Firefly_Inpaint_20230525032104_m97jqv.png",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996329/digital-store/20-Firefly_Inpaint_20230525032104_m97jqv.png"
 		],
 		"status": true,
 		"stock": 10,
-		"price": 300,
+		"price": 800,
 		"techStack": [
 			"React",
 			"Node.js"
 		],
-		"downloads": 100,
-		"rating": 4.5
-	},
-	{
-		"id": 2,
-		"title": "Online Ordering and Delivery Platform",
-		"category": "E-commerce",
-		"code": "code",
-		"demoUrl": "/demo/online-ordering-and-delivery-platform",
-		"shortDescription": "An online food ordering and delivery platform.",
-		"description": "A custom solution enabling restaurants to take orders online, manage deliveries, and handle payments. Built with React and Django, it includes features for managing menu items, processing payments, and tracking deliveries.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684724182/digital-store/2-Online_Ordering_and_Delivery_Platform-1_qgp9cc.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684724182/digital-store/2-Online_Ordering_and_Delivery_Platform-2_dupjgh.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 500,
-		"techStack": [
-			"React",
-			"Django"
-		],
-		"downloads": 120,
-		"rating": 4.6
-	},
-	{
-		"id": 3,
-		"title": "Inventory Management System",
-		"category": "Management System",
-		"code": "code",
-		"demoUrl": "/demo/inventory-management-system",
-		"shortDescription": "A real-time inventory tracking system.",
-		"description": "A system that tracks inventory in real time, predicts when they will need to reorder supplies, and could even automate the process. Built with Python and Django, it includes features for inventory tracking, reordering, and reporting.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684724182/digital-store/3-Inventory_Management_System-1_pu9vbx.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684724182/digital-store/3-Inventory_Management_System-2_ws3pvd.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 350,
-		"techStack": [
-			"Python",
-			"Django"
-		],
-		"downloads": 130,
-		"rating": 4.7
-	},
-	{
-		"id": 4,
-		"title": "Digital Menu Boards and Ordering Systems",
-		"category": "Digital Menus",
-		"code": "code",
-		"demoUrl": "/demo/digital-menu-boards-and-ordering-systems",
-		"shortDescription": "A digital menu and ordering system.",
-		"description": "Digital menu software that can be updated in real time, with features for customers to order directly from the menu. This could also include nutritional information, allergen warnings, etc. Built with Angular and Node.js.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684724183/digital-store/4-Digital_Menu_Boards_and_Ordering_Systems-1_xerlfo.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684724183/digital-store/4-Digital_Menu_Boards_and_Ordering_Systems-2_ixjsty.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 400,
-		"techStack": [
-			"Angular",
-			"Node.js"
-		],
-		"downloads": 110,
-		"rating": 4.8
-	},
-	{
-		"id": 5,
-		"title": "Staff Management Software",
-		"category": "Management System",
-		"code": "code",
-		"demoUrl": "/demo/staff-management-software",
-		"shortDescription": "A staff management tool.",
-		"description": "A tool to manage schedules, track hours, handle payroll, and even provide training modules for staff. Built with PHP and Laravel, it includes features for schedule management, time tracking, payroll processing, and training.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684914290/digital-store/5-5c1df51f-34ea-47e3-bd40-2e76130ee0dc_hqrwhk.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684914289/digital-store/5-a7c7b322-e53b-41dd-aadd-f0c7d2bcd5fa_cuitxs.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 450,
-		"techStack": [
-			"PHP",
-			"Laravel"
-		],
-		"downloads": 140,
-		"rating": 4.5
-	},
-	{
-		"id": 6,
-		"title": "POS Integration",
-		"category": "Point-of-Sale System",
-		"code": "code",
-		"demoUrl": "/demo/pos-integration",
-		"shortDescription": "A POS integration system.",
-		"description": "A system that connects various touchpoints like dine-in, take-away, and online orders into a central Point-of-Sale (POS) system. Built with Java and Spring Boot, it includes features for order management, payment processing, and real-time updates.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684914322/digital-store/6-0701d39a-9504-4cee-91f4-f36bb2daec34_u17mgn.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684914289/digital-store/6-d807766b-f096-40cd-834e-1c8b464c84eb_sgz8ws.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 600,
-		"techStack": [
-			"Java",
-			"Spring Boot"
-		],
-		"downloads": 120,
-		"rating": 4.6
-	},
-	{
-		"id": 7,
-		"title": "Healthy Eating and Allergen Alert App",
-		"category": "Health and Nutrition",
-		"code": "code",
-		"demoUrl": "/demo/healthy-eating-and-allergen-alert-app",
-		"shortDescription": "An app to manage allergen information and offer healthy eating options.",
-		"description": "A SaaS that helps restaurants manage allergen information, nutrition facts and offer suggestions for healthy eating options on their menu. Built with Swift for iOS and Kotlin for Android.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684914290/digital-store/7-afa8e1c2-cfcf-43e8-8fcb-5dafad860f59_deg4p1.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684914291/digital-store/7-dc46d4c8-b6e2-4ed0-b7eb-2a60aee493aa_pdkkdw.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 500,
-		"techStack": [
-			"Swift",
-			"Kotlin"
-		],
-		"downloads": 200,
-		"rating": 4.7
-	},
-	{
-		"id": 8,
-		"title": "Appointment Scheduling Software for Chiropractors",
-		"category": "Healthcare",
-		"code": "code",
-		"demoUrl": "/demo/appointment-scheduling-software-for-chiropractors",
-		"shortDescription": "An online booking system for chiropractors.",
-		"description": "Create an online booking system that can handle patient appointments, send reminders, and manage patient records. Built with JavaScript and Express.js, it includes appointment reminders and patient record management features.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684916878/digital-store/8-790a09ad-9f7b-4961-a776-7848148f8bab_fg7qzw.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684916878/digital-store/8-318cbaa6-09bb-4c44-a8d2-b80ddbf246eb_stwaok.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 450,
-		"techStack": [
-			"JavaScript",
-			"Express.js"
-		],
-		"downloads": 170,
-		"rating": 4.8
-	},
-	{
-		"id": 9,
-		"title": "Electronic Health Records (EHR) System",
-		"category": "Healthcare",
-		"code": "code",
-		"demoUrl": "/demo/electronic-health-records-system",
-		"shortDescription": "A secure and user-friendly system to manage patient data.",
-		"description": "Develop a secure and user-friendly system to manage patient data, appointments, treatment plans, and billing. Built with Ruby on Rails, it includes patient data management and billing features.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684916879/digital-store/9-efca0a47-fcbb-4439-a65a-e59a4f6433e2_kajhoa.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684916878/digital-store/9-5048fea9-36b1-47ab-be82-c919b20adea6_o1nvzc.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 600,
-		"techStack": [
-			"Ruby on Rails"
-		],
-		"downloads": 180,
+		"downloads": 300,
 		"rating": 4.9
-	},
-	{
-		"id": 10,
-		"title": "Telehealth Platform",
-		"category": "Healthcare",
-		"code": "code",
-		"demoUrl": "/demo/telehealth-platform",
-		"shortDescription": "A platform that allows healthcare providers to consult with their patients remotely.",
-		"description": "A platform that allows chiropractors or other healthcare providers to consult with their patients remotely, manage appointments, and securely share medical records and information. Built with Python and Django, it includes video conferencing and medical record sharing features.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684916878/digital-store/10-ee066cc8-c96e-4a68-9d93-c36eebf3ac27_zhsmpv.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684916880/digital-store/10-6daf45f9-b278-432d-90e4-4bc2345da803_f3qkq5.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 700,
-		"techStack": [
-			"Python",
-			"Django"
-		],
-		"downloads": 150,
-		"rating": 4.6
-	},
-	{
-		"id": 11,
-		"title": "Digital Marketing Management Tool",
-		"category": "Marketing",
-		"code": "code",
-		"demoUrl": "/demo/digital-marketing-management-tool",
-		"shortDescription": "A tool to manage and optimize digital marketing campaigns.",
-		"description": "Create a tool that helps small businesses manage their digital marketing campaigns, track analytics, and optimize for better results. Built with React and Node.js, it includes features for campaign management, analytics tracking, and optimization.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996326/digital-store/11-Firefly_Inpaint_20230524143312_plymgt.png",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996323/digital-store/11-Firefly_detailed_ux_ui_design_for_a_Digital_Marketing_Management_Tool_23928_aeg81a.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 550,
-		"techStack": [
-			"React",
-			"Node.js"
-		],
-		"downloads": 190,
-		"rating": 4.6
-	},
-	{
-		"id": 12,
-		"title": "Online Retail Platform",
-		"category": "E-commerce",
-		"code": "code",
-		"demoUrl": "/demo/online-retail-platform",
-		"shortDescription": "An e-commerce platform for small businesses.",
-		"description": "A system that helps small businesses manage their online sales, from inventory management to order processing and delivery. Built with Django and React, it includes features for inventory management, order processing, and delivery tracking.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996322/digital-store/12-Firefly_Inpaint_20230524144719_cfv7fn.png",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996336/digital-store/12-Firefly_Inpaint_20230524145754_zwryqz.png"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 600,
-		"techStack": [
-			"Django",
-			"React"
-		],
-		"downloads": 200,
-		"rating": 4.7
-	},
-	{
-		"id": 13,
-		"title": "Accounting and Invoicing Software",
-		"category": "Finance",
-		"code": "code",
-		"demoUrl": "/demo/accounting-and-invoicing-software",
-		"shortDescription": "A financial tool for small businesses.",
-		"description": "Develop a simplified accounting tool for small businesses to manage their finances, generate invoices, and handle taxes. Built with Java and Spring, it includes features for financial management, invoice generation, and tax calculation.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996321/digital-store/13-74003521-f339-4150-9e86-c7473360f745_a5fnnq.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996322/digital-store/13-Firefly_higly_detailed_ux_ui_design_for_an_Accounting_and_Invoicing_Software_57730_vcoeha.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 500,
-		"techStack": [
-			"Java",
-			"Spring"
-		],
-		"downloads": 150,
-		"rating": 4.5
-	},
-	{
-		"id": 14,
-		"title": "Project Management Tool",
-		"category": "Management",
-		"code": "code",
-		"demoUrl": "/demo/project-management-tool",
-		"shortDescription": "A project management tool for small businesses.",
-		"description": "A tool that helps small businesses manage their projects, collaborate, and track their progress. Built with React and Node.js, it includes features for project tracking, collaboration, and progress reporting.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996321/digital-store/14-6a4d4b4f-25ed-4dfd-b997-1c2b9e7a9302_bkvkfc.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996324/digital-store/14-Firefly_Inpaint_20230524150826_pewtdo.png2"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 400,
-		"techStack": [
-			"React",
-			"Node.js"
-		],
-		"downloads": 160,
-		"rating": 4.6
-	},
-	{
-		"id": 15,
-		"title": "Customer Support System",
-		"category": "Customer Service",
-		"code": "code",
-		"demoUrl": "/demo/customer-support-system",
-		"shortDescription": "A comprehensive system to enhance customer service.",
-		"description": "A system that helps businesses manage customer inquiries, automate responses, and improve overall customer service. Built with Python and Flask, it includes features for inquiry management, automated responses, and customer service analytics.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996323/digital-store/15-7998d206-4174-479d-bbff-42df45295aa6_qjrmpe.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996322/digital-store/15-a701c05c-b029-491f-bc5f-35c54b0828fb_hyid9b.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 500,
-		"techStack": [
-			"Python",
-			"Flask"
-		],
-		"downloads": 200,
-		"rating": 4.6
-	},
-	{
-		"id": 16,
-		"title": "Data Analytics Tool",
-		"category": "Data Analysis",
-		"code": "code",
-		"demoUrl": "/demo/data-analytics-tool",
-		"shortDescription": "A tool to analyze and visualize data.",
-		"description": "A tool that helps businesses analyze data, visualize trends, and make informed decisions. Built with JavaScript and D3.js, it includes features for data analysis, trend visualization, and decision support.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996924/digital-store/16-405ff4d6-f0f6-4304-8ab1-6012f9fb40d0_dncphq.png",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996323/digital-store/16-39e04c59-b017-49c6-8f5e-f672aecb278c_hygnl2.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 700,
-		"techStack": [
-			"JavaScript",
-			"D3.js"
-		],
-		"downloads": 150,
-		"rating": 4.5
-	},
-	{
-		"id": 17,
-		"title": "HR Management Software",
-		"category": "Management",
-		"code": "code",
-		"demoUrl": "/demo/hr-management-software",
-		"shortDescription": "A software to streamline HR processes.",
-		"description": "A software that helps businesses manage HR processes, including employee management, payroll, benefits, and compliance. Built with PHP and Laravel, it includes features for employee management, payroll processing, benefits administration, and compliance tracking.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996323/digital-store/17-a2a4344d-8e2c-45fc-95e6-bbcac61f6aea_q8tol8.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996325/digital-store/17-b06db3b4-5d41-4e06-89f5-f7d8d25059e3_qfqlva.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 750,
-		"techStack": [
-			"PHP",
-			"Laravel"
-		],
-		"downloads": 180,
-		"rating": 4.7
-	},
-	{
-		"id": 18,
-		"title": "Membership Management System",
-		"category": "Management",
-		"code": "code",
-		"demoUrl": "/demo/membership-management-system",
-		"shortDescription": "A system to manage and optimize membership programs.",
-		"description": "A system that helps organizations manage their membership programs, with features like member tracking, payment processing, and member communication. Built with JavaScript and Express.js, it includes membership management and payment processing features.",
-		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996324/digital-store/18-e2b3890f-d776-41ee-a172-322fd4a17c98_emzspg.jpg",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996325/digital-store/18-a1b1ba1c-f5fb-4522-8eb9-9a4b17999af9_sqtnjo.jpg"
-		],
-		"status": true,
-		"stock": 10,
-		"price": 550,
-		"techStack": [
-			"JavaScript",
-			"Express.js"
-		],
-		"downloads": 220,
-		"rating": 4.8
 	},
 	{
 		"id": 19,
@@ -417,103 +44,413 @@
 		"rating": 4.6
 	},
 	{
-		"id": 20,
-		"title": "E-Learning Platform",
-		"category": "Education",
+		"id": 18,
+		"title": "Membership Management System",
+		"category": "Management",
 		"code": "code",
-		"demoUrl": "/demo/e-learning-platform",
-		"shortDescription": "A comprehensive platform for online education.",
-		"description": "A comprehensive platform that enables educators to create and deliver courses online, with features for quizzes, grading, and student tracking. Built with React and Node.js, it includes course creation, quizzes, grading, and student tracking features.",
+		"demoUrl": "/demo/membership-management-system",
+		"shortDescription": "A system to manage and optimize membership programs.",
+		"description": "A system that helps organizations manage their membership programs, with features like member tracking, payment processing, and member communication. Built with JavaScript and Express.js, it includes membership management and payment processing features.",
 		"thumbnails": [
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996329/digital-store/20-Firefly_Inpaint_20230525032104_m97jqv.png",
-			"https://res.cloudinary.com/ferjen/image/upload/v1684996329/digital-store/20-Firefly_Inpaint_20230525032104_m97jqv.png"
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996324/digital-store/18-e2b3890f-d776-41ee-a172-322fd4a17c98_emzspg.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996325/digital-store/18-a1b1ba1c-f5fb-4522-8eb9-9a4b17999af9_sqtnjo.jpg"
 		],
 		"status": true,
 		"stock": 10,
-		"price": 800,
+		"price": 550,
+		"techStack": [
+			"JavaScript",
+			"Express.js"
+		],
+		"downloads": 220,
+		"rating": 4.8
+	},
+	{
+		"id": 17,
+		"title": "HR Management Software",
+		"category": "Management",
+		"code": "code",
+		"demoUrl": "/demo/hr-management-software",
+		"shortDescription": "A software to streamline HR processes.",
+		"description": "A software that helps businesses manage HR processes, including employee management, payroll, benefits, and compliance. Built with PHP and Laravel, it includes features for employee management, payroll processing, benefits administration, and compliance tracking.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996323/digital-store/17-a2a4344d-8e2c-45fc-95e6-bbcac61f6aea_q8tol8.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996325/digital-store/17-b06db3b4-5d41-4e06-89f5-f7d8d25059e3_qfqlva.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 750,
+		"techStack": [
+			"PHP",
+			"Laravel"
+		],
+		"downloads": 180,
+		"rating": 4.7
+	},
+	{
+		"id": 16,
+		"title": "Data Analytics Tool",
+		"category": "Data Analysis",
+		"code": "code",
+		"demoUrl": "/demo/data-analytics-tool",
+		"shortDescription": "A tool to analyze and visualize data.",
+		"description": "A tool that helps businesses analyze data, visualize trends, and make informed decisions. Built with JavaScript and D3.js, it includes features for data analysis, trend visualization, and decision support.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996924/digital-store/16-405ff4d6-f0f6-4304-8ab1-6012f9fb40d0_dncphq.png",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996323/digital-store/16-39e04c59-b017-49c6-8f5e-f672aecb278c_hygnl2.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 700,
+		"techStack": [
+			"JavaScript",
+			"D3.js"
+		],
+		"downloads": 150,
+		"rating": 4.5
+	},
+	{
+		"id": 15,
+		"title": "Customer Support System",
+		"category": "Customer Service",
+		"code": "code",
+		"demoUrl": "/demo/customer-support-system",
+		"shortDescription": "A comprehensive system to enhance customer service.",
+		"description": "A system that helps businesses manage customer inquiries, automate responses, and improve overall customer service. Built with Python and Flask, it includes features for inquiry management, automated responses, and customer service analytics.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996323/digital-store/15-7998d206-4174-479d-bbff-42df45295aa6_qjrmpe.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996322/digital-store/15-a701c05c-b029-491f-bc5f-35c54b0828fb_hyid9b.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 500,
+		"techStack": [
+			"Python",
+			"Flask"
+		],
+		"downloads": 200,
+		"rating": 4.6
+	},
+	{
+		"id": 14,
+		"title": "Project Management Tool",
+		"category": "Management",
+		"code": "code",
+		"demoUrl": "/demo/project-management-tool",
+		"shortDescription": "A project management tool for small businesses.",
+		"description": "A tool that helps small businesses manage their projects, collaborate, and track their progress. Built with React and Node.js, it includes features for project tracking, collaboration, and progress reporting.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996321/digital-store/14-6a4d4b4f-25ed-4dfd-b997-1c2b9e7a9302_bkvkfc.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996324/digital-store/14-Firefly_Inpaint_20230524150826_pewtdo.png2"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 400,
 		"techStack": [
 			"React",
 			"Node.js"
 		],
-		"downloads": 300,
+		"downloads": 160,
+		"rating": 4.6
+	},
+	{
+		"id": 13,
+		"title": "Accounting and Invoicing Software",
+		"category": "Finance",
+		"code": "code",
+		"demoUrl": "/demo/accounting-and-invoicing-software",
+		"shortDescription": "A financial tool for small businesses.",
+		"description": "Develop a simplified accounting tool for small businesses to manage their finances, generate invoices, and handle taxes. Built with Java and Spring, it includes features for financial management, invoice generation, and tax calculation.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996321/digital-store/13-74003521-f339-4150-9e86-c7473360f745_a5fnnq.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996322/digital-store/13-Firefly_higly_detailed_ux_ui_design_for_an_Accounting_and_Invoicing_Software_57730_vcoeha.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 500,
+		"techStack": [
+			"Java",
+			"Spring"
+		],
+		"downloads": 150,
+		"rating": 4.5
+	},
+	{
+		"id": 12,
+		"title": "Online Retail Platform",
+		"category": "E-commerce",
+		"code": "code",
+		"demoUrl": "/demo/online-retail-platform",
+		"shortDescription": "An e-commerce platform for small businesses.",
+		"description": "A system that helps small businesses manage their online sales, from inventory management to order processing and delivery. Built with Django and React, it includes features for inventory management, order processing, and delivery tracking.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996322/digital-store/12-Firefly_Inpaint_20230524144719_cfv7fn.png",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996336/digital-store/12-Firefly_Inpaint_20230524145754_zwryqz.png"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 600,
+		"techStack": [
+			"Django",
+			"React"
+		],
+		"downloads": 200,
+		"rating": 4.7
+	},
+	{
+		"id": 11,
+		"title": "Digital Marketing Management Tool",
+		"category": "Marketing",
+		"code": "code",
+		"demoUrl": "/demo/digital-marketing-management-tool",
+		"shortDescription": "A tool to manage and optimize digital marketing campaigns.",
+		"description": "Create a tool that helps small businesses manage their digital marketing campaigns, track analytics, and optimize for better results. Built with React and Node.js, it includes features for campaign management, analytics tracking, and optimization.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996326/digital-store/11-Firefly_Inpaint_20230524143312_plymgt.png",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684996323/digital-store/11-Firefly_detailed_ux_ui_design_for_a_Digital_Marketing_Management_Tool_23928_aeg81a.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 550,
+		"techStack": [
+			"React",
+			"Node.js"
+		],
+		"downloads": 190,
+		"rating": 4.6
+	},
+	{
+		"id": 10,
+		"title": "Telehealth Platform",
+		"category": "Healthcare",
+		"code": "code",
+		"demoUrl": "/demo/telehealth-platform",
+		"shortDescription": "A platform that allows healthcare providers to consult with their patients remotely.",
+		"description": "A platform that allows chiropractors or other healthcare providers to consult with their patients remotely, manage appointments, and securely share medical records and information. Built with Python and Django, it includes video conferencing and medical record sharing features.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684916878/digital-store/10-ee066cc8-c96e-4a68-9d93-c36eebf3ac27_zhsmpv.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684916880/digital-store/10-6daf45f9-b278-432d-90e4-4bc2345da803_f3qkq5.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 700,
+		"techStack": [
+			"Python",
+			"Django"
+		],
+		"downloads": 150,
+		"rating": 4.6
+	},
+	{
+		"id": 9,
+		"title": "Electronic Health Records (EHR) System",
+		"category": "Healthcare",
+		"code": "code",
+		"demoUrl": "/demo/electronic-health-records-system",
+		"shortDescription": "A secure and user-friendly system to manage patient data.",
+		"description": "Develop a secure and user-friendly system to manage patient data, appointments, treatment plans, and billing. Built with Ruby on Rails, it includes patient data management and billing features.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684916879/digital-store/9-efca0a47-fcbb-4439-a65a-e59a4f6433e2_kajhoa.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684916878/digital-store/9-5048fea9-36b1-47ab-be82-c919b20adea6_o1nvzc.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 600,
+		"techStack": [
+			"Ruby on Rails"
+		],
+		"downloads": 180,
 		"rating": 4.9
 	},
 	{
+		"id": 8,
+		"title": "Appointment Scheduling Software for Chiropractors",
+		"category": "Healthcare",
+		"code": "code",
+		"demoUrl": "/demo/appointment-scheduling-software-for-chiropractors",
+		"shortDescription": "An online booking system for chiropractors.",
+		"description": "Create an online booking system that can handle patient appointments, send reminders, and manage patient records. Built with JavaScript and Express.js, it includes appointment reminders and patient record management features.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684916878/digital-store/8-790a09ad-9f7b-4961-a776-7848148f8bab_fg7qzw.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684916878/digital-store/8-318cbaa6-09bb-4c44-a8d2-b80ddbf246eb_stwaok.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 450,
+		"techStack": [
+			"JavaScript",
+			"Express.js"
+		],
+		"downloads": 170,
+		"rating": 4.8
+	},
+	{
+		"id": 7,
+		"title": "Healthy Eating and Allergen Alert App",
+		"category": "Health and Nutrition",
+		"code": "code",
+		"demoUrl": "/demo/healthy-eating-and-allergen-alert-app",
+		"shortDescription": "An app to manage allergen information and offer healthy eating options.",
+		"description": "A SaaS that helps restaurants manage allergen information, nutrition facts and offer suggestions for healthy eating options on their menu. Built with Swift for iOS and Kotlin for Android.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684914290/digital-store/7-afa8e1c2-cfcf-43e8-8fcb-5dafad860f59_deg4p1.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684914291/digital-store/7-dc46d4c8-b6e2-4ed0-b7eb-2a60aee493aa_pdkkdw.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 500,
+		"techStack": [
+			"Swift",
+			"Kotlin"
+		],
+		"downloads": 200,
+		"rating": 4.7
+	},
+	{
+		"id": 6,
+		"title": "POS Integration",
+		"category": "Point-of-Sale System",
+		"code": "code",
+		"demoUrl": "/demo/pos-integration",
+		"shortDescription": "A POS integration system.",
+		"description": "A system that connects various touchpoints like dine-in, take-away, and online orders into a central Point-of-Sale (POS) system. Built with Java and Spring Boot, it includes features for order management, payment processing, and real-time updates.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684914322/digital-store/6-0701d39a-9504-4cee-91f4-f36bb2daec34_u17mgn.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684914289/digital-store/6-d807766b-f096-40cd-834e-1c8b464c84eb_sgz8ws.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 600,
+		"techStack": [
+			"Java",
+			"Spring Boot"
+		],
+		"downloads": 120,
+		"rating": 4.6
+	},
+	{
+		"id": 5,
+		"title": "Staff Management Software",
+		"category": "Management System",
+		"code": "code",
+		"demoUrl": "/demo/staff-management-software",
+		"shortDescription": "A staff management tool.",
+		"description": "A tool to manage schedules, track hours, handle payroll, and even provide training modules for staff. Built with PHP and Laravel, it includes features for schedule management, time tracking, payroll processing, and training.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684914290/digital-store/5-5c1df51f-34ea-47e3-bd40-2e76130ee0dc_hqrwhk.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684914289/digital-store/5-a7c7b322-e53b-41dd-aadd-f0c7d2bcd5fa_cuitxs.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 450,
+		"techStack": [
+			"PHP",
+			"Laravel"
+		],
+		"downloads": 140,
+		"rating": 4.5
+	},
+	{
+		"id": 4,
+		"title": "Digital Menu Boards and Ordering Systems",
+		"category": "Digital Menus",
+		"code": "code",
+		"demoUrl": "/demo/digital-menu-boards-and-ordering-systems",
+		"shortDescription": "A digital menu and ordering system.",
+		"description": "Digital menu software that can be updated in real time, with features for customers to order directly from the menu. This could also include nutritional information, allergen warnings, etc. Built with Angular and Node.js.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684724183/digital-store/4-Digital_Menu_Boards_and_Ordering_Systems-1_xerlfo.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684724183/digital-store/4-Digital_Menu_Boards_and_Ordering_Systems-2_ixjsty.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 400,
+		"techStack": [
+			"Angular",
+			"Node.js"
+		],
+		"downloads": 110,
+		"rating": 4.8
+	},
+	{
+		"id": 3,
+		"title": "Inventory Management System",
+		"category": "Management System",
+		"code": "code",
+		"demoUrl": "/demo/inventory-management-system",
+		"shortDescription": "A real-time inventory tracking system.",
+		"description": "A system that tracks inventory in real time, predicts when they will need to reorder supplies, and could even automate the process. Built with Python and Django, it includes features for inventory tracking, reordering, and reporting.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684724182/digital-store/3-Inventory_Management_System-1_pu9vbx.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684724182/digital-store/3-Inventory_Management_System-2_ws3pvd.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 350,
+		"techStack": [
+			"Python",
+			"Django"
+		],
+		"downloads": 130,
+		"rating": 4.7
+	},
+	{
+		"id": 2,
+		"title": "Online Ordering and Delivery Platform",
+		"category": "E-commerce",
+		"code": "code",
+		"demoUrl": "/demo/online-ordering-and-delivery-platform",
+		"shortDescription": "An online food ordering and delivery platform.",
+		"description": "A custom solution enabling restaurants to take orders online, manage deliveries, and handle payments. Built with React and Django, it includes features for managing menu items, processing payments, and tracking deliveries.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684724182/digital-store/2-Online_Ordering_and_Delivery_Platform-1_qgp9cc.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684724182/digital-store/2-Online_Ordering_and_Delivery_Platform-2_dupjgh.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 500,
+		"techStack": [
+			"React",
+			"Django"
+		],
+		"downloads": 120,
+		"rating": 4.6
+	},
+	{
+		"id": 1,
+		"title": "Reservation Management System",
+		"category": "Management System",
+		"code": "code",
+		"demoUrl": "/demo/reservation-management-system",
+		"shortDescription": "An online booking and reservation system.",
+		"description": "A system which handles table reservations, catering requests, and even event bookings. Built with React and Node.js, it includes real-time reservation tracking and booking features.",
+		"thumbnails": [
+			"https://res.cloudinary.com/ferjen/image/upload/v1684724182/digital-store/1-Reservation_Management_System-1_ngfw8a.jpg",
+			"https://res.cloudinary.com/ferjen/image/upload/v1684724183/digital-store/1-Reservation_Management_System-2_bya5w7.jpg"
+		],
+		"status": true,
+		"stock": 10,
+		"price": 300,
+		"techStack": [
+			"React",
+			"Node.js"
+		],
+		"downloads": 100,
+		"rating": 4.5
+	},
+	{
 		"id": 21,
-		"title": "WebTest 1",
-		"category": "Customer Service",
-		"code": "WebTest 1",
+		"title": "NEWWBIE",
+		"category": "Data Analysis",
+		"code": "WQEQWE",
 		"shortDescription": "WebTest 1",
 		"description": "WebTest 1",
-		"thumbnails": "WebTest 1",
-		"demoUrl": "WebTest 1",
-		"techStack": "WebTest 1",
-		"stock": "1500",
-		"price": "5000"
-	},
-	{
-		"id": 22,
-		"title": "WebTest 1",
-		"category": "Customer Service",
-		"code": "WebTest 1",
-		"shortDescription": "WebTest 1",
-		"description": "WebTest 1",
-		"thumbnails": "WebTest 1",
-		"demoUrl": "WebTest 1",
-		"techStack": "WebTest 1",
-		"stock": "1500",
-		"price": "5000"
-	},
-	{
-		"id": 23,
-		"title": "WebTest 1",
-		"category": "Customer Service",
-		"code": "WebTest 1",
-		"shortDescription": "WebTest 1",
-		"description": "WebTest 1",
-		"thumbnails": "WebTest 1",
-		"demoUrl": "WebTest 1",
-		"techStack": "WebTest 1",
-		"stock": "1500",
-		"price": "5000"
-	},
-	{
-		"id": 24,
-		"title": "oke para empezar",
-		"category": "Customer Service",
-		"code": "WebTest 1",
-		"shortDescription": "WebTest 1",
-		"description": "WebTest 1",
-		"thumbnails": "WebTest 1",
-		"demoUrl": "WebTest 1",
+		"thumbnails": [
+			"https://images.pexels.com/photos/1854652/pexels-photo-1854652.jpeg?cs=srgb&dl=slice-cake-1854652.jpg&fm=jpg"
+		],
+		"demoUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqHH?ver=728b",
 		"techStack": "WebTest 1",
 		"stock": "1",
-		"price": "WebTest 1"
-	},
-	{
-		"id": 25,
-		"title": "oke para empezar",
-		"category": "Customer Service",
-		"code": "WebTest 1",
-		"shortDescription": "WebTest 1",
-		"description": "WebTest 1",
-		"thumbnails": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqHH?ver=728b",
-		"demoUrl": "WebTest 1",
-		"techStack": "WebTest 1",
-		"stock": "1",
-		"price": "WebTest 1"
-	},
-	{
-		"id": 26,
-		"title": "WebSockets",
-		"category": "Customer Service",
-		"code": "WebTest 1",
-		"shortDescription": "WebTest 1",
-		"description": "WebTest 1",
-		"thumbnails": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqHH?ver=728b",
-		"demoUrl": "WebTest 1",
-		"techStack": "WebTest 1",
-		"stock": "1",
-		"price": "WebTest 1"
+		"price": "5000"
 	}
 ]
