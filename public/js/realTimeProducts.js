@@ -14,7 +14,7 @@ form.addEventListener( 'submit', async ( e ) => {
         demoUrl: form.demoUrl.value,
         techStack: form.techStack.value,
         stock: form.stock.value,
-        pric: form.pric.value,
+        price: form.pric.value,
     };
 
     // Emit a 'new-product'
@@ -24,3 +24,25 @@ form.addEventListener( 'submit', async ( e ) => {
     form.reset();
 } );
 
+socket.on( "update-products", ( products ) => {
+    const productList = document.querySelector( ".products-list" );
+    productList.innerHTML = "";
+
+    products.forEach( ( product ) => {
+        productList.innerHTML += `
+      <li class='product-item' data-id='${product.id}'>
+        <img src='${product.thumbnails[ 0 ]}' alt='Image of ${product.title}' class='product-item__image' />
+        <div class='product-item__body'>
+          <p class='ff-secondary fs-2 ls-1'>${product.title}</p>
+          <p>${product.category}</p>
+          <p>${product.shortDescription}</p>
+          <p>Price: ${product.price}</p>
+        </div>
+        <div class='product-item__buttons'>
+          <button class='btn-edit ff-secondary fs-2'>Edit</button>
+          <button class='btn-delete ff-secondary fs-2'>Delete</button>
+        </div>
+      </li>
+      `;
+    } );
+} );

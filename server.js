@@ -22,8 +22,13 @@ import { routerUsers } from './routes/users.router.js';
 dotenv.config();
 
 const app = express();
-const server = http.createServer( app );
-const io = new Server( server );
+const port = process.env.PORT || 8080;
+
+const httpServer = app.listen( port, () => {
+    console.log( `Server running on port => ${port} 🤓` )
+} )
+
+const socketServer = new Server( httpServer );
 
 app.use( cors() );
 app.use( express.json() );
@@ -39,7 +44,6 @@ app.set( 'view engine', 'handlebars' );
 
 app.use( '/', viewsRouter );
 
-const port = process.env.PORT || 8080;
 
 if ( !port ) {
     console.error( 'Missing environment variables' );
@@ -53,21 +57,16 @@ app.use( routerUsers );
 
 const productsManager = new ProductsManager();
 
-io.on( 'connection', ( socket ) => {
-    console.log( 'a user connected' );
+socketServer.on( "connection", ( socket ) => {
 
-    socket.on( 'new-product', async ( product ) => {
-        // Add the new product
-        await productsManager.addProduct( product );
+    socket.on( "new-product", async ( product ) => {
+        try {
+            const newProduct = await productsManager.addProduct( product );
+            socketServer.emit( "update-products", await productsManager.getProducts() );
 
-        // Get the updated list of products
-        const products = await productsManager.getProducts();
-
-        // Send the updated list of products to all connected clients
-        io.emit( 'update-products', products );
+        } catch ( error ) {
+            console.error( error );
+        }
     } );
-} );
 
-server.listen( port, () => {
-    console.log( `Server running on port => ${port} 🤓` );
 } );

@@ -83,3 +83,51 @@
     </section>
 
 </main>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io();
+
+    document.querySelector( '.products-section' ).addEventListener( 'submit', ( event ) => {
+        event.preventDefault();
+
+        const product = {
+            title: event.target.elements.title.value,
+            category: event.target.elements.category.value,
+            code: event.target.elements.code.value,
+            demoUrl: event.target.elements.demoUrl.value,
+            shortDescription: event.target.elements.shortDescription.value,
+            description: event.target.elements.description.value,
+            thumbnails: event.target.elements.thumbnails.value,
+            techStack: event.target.elements.techStack.value,
+            stock: event.target.elements.stock.value,
+            price: event.target.elements.price.value,
+        };
+
+        socket.emit( 'new-product', product );
+    } );
+
+    socket.on( 'update-products', ( products ) => {
+        const productList = document.querySelector( '.products-list' );
+        productList.innerHTML = '';
+
+        products.forEach( product => {
+            productList.innerHTML += `
+        <li class='product-item' data-id='${product.id}'>
+            <img src='${product.thumbnails[ 0 ]}' alt='Image of ${product.title}' class='product-item__image' />
+            <div class='product-item__body'>
+                <p class='ff-secondary fs-2 ls-1'>${product.title}</p>
+                <p>${product.category}</p>
+                <p>${product.shortDescription}</p>
+                <p>Price: ${product.price}</p>
+            </div>
+            <div class='product-item__buttons'>
+                <button class='btn-edit ff-secondary fs-2'>Edit</button>
+                <button class='btn-delete ff-secondary fs-2'>Delete</button>
+            </div>
+        </li>
+        `;
+        } );
+    } );
+
+</script>
