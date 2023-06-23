@@ -1,10 +1,5 @@
 
 
-/*****************************************************
- * Routes de Usuarios / Auth
- * hots + /api/auth
- *****************************************************/
-
 import express from 'express';
 import { Server } from 'socket.io';
 import __dirname from './utils.js';
@@ -12,76 +7,79 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import handlebars from 'express-handlebars';
 import path from 'path';
+
 import viewsRouter from './routes/views.router.js';
-import ProductsManager from './classes/ProductsManager.class.js';
+// import ProductsManager from './classes/ProductsManager.class.js';
 import { routerCart } from './routes/carts.router.js';
 import { routerCategories } from './routes/categories.router.js';
 import { routerProducts } from './routes/products.router.js';
 import { routerUsers } from './routes/users.router.js';
 import { routerAuth } from './routes/auth.router.js';
 
+import ProductsManager from './daos/mongodb/ProductsManager.class.js';
+
 dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 8080;
 
-const httpServer = app.listen(port, () => {
-  console.log(`Server running on port => ${port} 🤓`);
-});
+const httpServer = app.listen( port, () => {
+  console.log( `Server running on port => ${port} 🤓` );
+} );
 
-const socketServer = new Server(httpServer);
+const socketServer = new Server( httpServer );
 
 // Middleware
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, '/public')));
+app.use( cors() );
+app.use( express.json() );
+app.use( express.urlencoded( { extended: true } ) );
+app.use( express.static( path.join( __dirname, '/public' ) ) );
 
 // Configure handlebars
-app.engine('handlebars', handlebars.engine({
-  layoutsDir: path.join(__dirname, 'views/layouts/'),
+app.engine( 'handlebars', handlebars.engine( {
+  layoutsDir: path.join( __dirname, 'views/layouts/' ),
   defaultLayout: 'main',
-  partialsDir: path.join(__dirname, 'views/')
-}));
-app.set('view engine', 'handlebars');
-app.set('views', path.join(__dirname, 'views'));
+  partialsDir: path.join( __dirname, 'views/' )
+} ) );
+app.set( 'view engine', 'handlebars' );
+app.set( 'views', path.join( __dirname, 'views' ) );
 
 // Register routers
-app.use('/', viewsRouter);
-app.use('/login', routerAuth);
-app.use(routerCart);
-app.use(routerCategories);
-app.use(routerProducts);
-app.use(routerUsers);
+app.use( '/', viewsRouter );
+app.use( '/login', routerAuth );
+app.use( routerCart );
+app.use( routerCategories );
+app.use( routerProducts );
+app.use( routerUsers );
 
 // Create an instance of ProductsManager
 const productsManager = new ProductsManager();
 
 // Emit all products to connected sockets on initial connection
-socketServer.emit('update-products', await productsManager.getProducts());
+socketServer.emit( 'update-products', await productsManager.getProducts() );
 
 // Handle socket events
-socketServer.on('connection', (socket) => {
+socketServer.on( 'connection', ( socket ) => {
   // Handle "new-product" event
-  socket.on('new-product', async (newProduct) => {
+  socket.on( 'new-product', async ( newProduct ) => {
     try {
-      await productsManager.addProduct(newProduct);
-      socketServer.emit('update-products', await productsManager.getProducts());
-    } catch (error) {
-      console.error(error);
+      await productsManager.addProduct( newProduct );
+      socketServer.emit( 'update-products', await productsManager.getProducts() );
+    } catch ( error ) {
+      console.error( error );
     }
-  });
+  } );
 
   // Handle "delete-product" event
-  socket.on('delete-product', async (productID) => {
+  socket.on( 'delete-product', async ( productID ) => {
     try {
-      await productsManager.deleteProduct(productID);
-      socketServer.emit('update-products', await productsManager.getProducts());
-    } catch (error) {
-      console.error(error);
+      await productsManager.deleteProduct( productID );
+      socketServer.emit( 'update-products', await productsManager.getProducts() );
+    } catch ( error ) {
+      console.error( error );
     }
-  });
-});
+  } );
+} );
 
 
 
@@ -89,17 +87,16 @@ socketServer.on('connection', (socket) => {
 //     Routes de Usuarios / Auth
 //     hots + /api/auth
 // ******************************************************/
-
+//
 // import express from 'express';
 // import { Server } from 'socket.io';
+// import __dirname from './utils.js';
 // import cors from 'cors';
 // import dotenv from 'dotenv';
 // import handlebars from 'express-handlebars';
-// import __dirname from './utils.js';
-// import viewsRouter from './views/views.router.js';
-
+// import path from 'path';
+// import viewsRouter from './routes/views.router.js';
 // import ProductsManager from './classes/ProductsManager.class.js';
-
 // import { routerCart } from './routes/carts.router.js';
 // import { routerCategories } from './routes/categories.router.js';
 // import { routerProducts } from './routes/products.router.js';
@@ -111,69 +108,60 @@ socketServer.on('connection', (socket) => {
 // const app = express();
 // const port = process.env.PORT || 8080;
 
-// const httpServer = app.listen( port, () => {
-//     console.log( `Server running on port => ${port} 🤓` )
-// } )
+// const httpServer = app.listen(port, () => {
+//   console.log(`Server running on port => ${port} 🤓`);
+// });
 
-// const socketServer = new Server( httpServer );
+// const socketServer = new Server(httpServer);
 
-// app.use( cors() );
-// app.use( express.json() );
-// app.use( express.urlencoded( { extended: true } ) );
-// app.use( express.static( __dirname + '/public' ) )
+// // Middleware
+// app.use(cors());
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.static(path.join(__dirname, '/public')));
 
-// // app.engine( 'handlebars', handlebars.engine() );
+// // Configure handlebars
+// app.engine('handlebars', handlebars.engine({
+//   layoutsDir: path.join(__dirname, 'views/layouts/'),
+//   defaultLayout: 'main',
+//   partialsDir: path.join(__dirname, 'views/')
+// }));
+// app.set('view engine', 'handlebars');
+// app.set('views', path.join(__dirname, 'views'));
 
-// app.engine( 'handlebars', handlebars.engine( {
-//     layoutsDir: 'views/layouts/',
-//     defaultLayout: 'main',
-//     partialsDir: 'views/'
-// } ) );
+// // Register routers
+// app.use('/', viewsRouter);
+// app.use('/login', routerAuth);
+// app.use(routerCart);
+// app.use(routerCategories);
+// app.use(routerProducts);
+// app.use(routerUsers);
 
-// app.set( 'view engine', 'handlebars' );
-// app.set( 'views', 'views' );
-
-// app.use( '/', viewsRouter );
-// app.use( '/login', routerAuth );
-
-
-// if ( !port ) {
-//     console.error( 'Missing environment variables' );
-//     process.exit( 1 );
-// }
-
-// app.use( routerCart );
-// app.use( routerCategories );
-// app.use( routerProducts );
-// app.use( routerUsers );
-
+// // Create an instance of ProductsManager
 // const productsManager = new ProductsManager();
 
-// // Render (emit) all products on connect
-// socketServer.emit( "update-products", await productsManager.getProducts() );
+// // Emit all products to connected sockets on initial connection
+// socketServer.emit('update-products', await productsManager.getProducts());
 
-// // Add product and render products again
-// socketServer.on( "connection", ( socket ) => {
+// // Handle socket events
+// socketServer.on('connection', (socket) => {
+//   // Handle "new-product" event
+//   socket.on('new-product', async (newProduct) => {
+//     try {
+//       await productsManager.addProduct(newProduct);
+//       socketServer.emit('update-products', await productsManager.getProducts());
+//     } catch (error) {
+//       console.error(error);
+//     }
+//   });
 
-//     socket.on( "new-product", async ( newProduct ) => {
-//         try {
-//             await productsManager.addProduct( newProduct );
-//             socketServer.emit( "update-products", await productsManager.getProducts() );
-
-//         } catch ( error ) {
-//             console.error( error );
-//         }
-//     } );
-    
-//     socket.on( "delete-product", async ( productID ) => {
-
-//         try {
-//            await productsManager.deleteProduct( productID );
-//             socketServer.emit( "update-products", await productsManager.getProducts() );
-
-//         } catch ( error ) {
-//             console.error( error );
-//         }
-//     } );
-
-// } );
+//   // Handle "delete-product" event
+//   socket.on('delete-product', async (productID) => {
+//     try {
+//       await productsManager.deleteProduct(productID);
+//       socketServer.emit('update-products', await productsManager.getProducts());
+//     } catch (error) {
+//       console.error(error);
+//     }
+//   });
+// });

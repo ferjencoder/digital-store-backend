@@ -1,7 +1,9 @@
 
 
 import { Router } from 'express';
-import ProductsManager from '../classes/ProductsManager.class.js';
+import ProductsManager from '../daos/mongodb/ProductsManager.class';
+
+// import ProductsManager from '../classes/ProductsManager.class.js';
 
 
 export const routerProducts = Router();

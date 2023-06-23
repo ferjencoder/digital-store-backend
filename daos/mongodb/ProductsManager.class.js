@@ -1,51 +1,44 @@
 
 
-// import path from 'path';
-// import fs from 'fs';
-// import { fileURLToPath } from 'url';
-// import { dirname } from 'path';
-
-// const __filename = fileURLToPath( import.meta.url );
-// const __dirname = dirname( __filename );
-
-// const PRODUCTS_FILE_PATH = path.resolve( __dirname, '../data/products.json' );
+import mongoose from 'mongoose';
+import { productsModel } from './models/products.model';
 
 
 export default class ProductsManager {
 
-    // Utility methods
-    async readProductsFromFile () {
-        const data = await fs.promises.readFile( PRODUCTS_FILE_PATH, 'utf-8' );
-        return JSON.parse( data );
-    };
-
-    async writeProductsToFile ( products ) {
-        await fs.promises.writeFile( PRODUCTS_FILE_PATH, JSON.stringify( products, null, '\t' ) );
-    };
-
-    // CRUD operations
-    async getProducts ( num ) {
-
-    };
+    connection = mongoose.connect( 'mongodb+srv://ferjencoder:XR05p6wWLPT9sS5B@digitalstore.sqxyq1o.mongodb.net/' );
 
     async addProduct ( product ) {
-
+        let result = await productsModel.create( product );
+        return result;
     };
 
-    async updateProduct ( id, productData ) {
-
-    };
-
-    async deleteProduct ( id ) {
-
-    };
-
-    async getProductsByCategory ( category ) {
-
+    async getProducts ( num = null ) {
+        let result = await productsModel.find();
+        return result;
     };
 
     async getProductById ( id ) {
+        let result = await productsModel.findOne( { _id: id } );
+        return result;
+    };
 
+    async getProductsByCategory ( category ) {
+        let result = await productsModel.find( category );
+        return result;
+    };
+
+    async updateProduct ( id, productData ) {
+        let result = await productsModel.updateOne(
+            { _id: id },
+            { $set: updateProduct }
+        );
+        return result;
+    };
+
+    async deleteProduct ( id ) {
+        let result = await productsModel.deleteOne( { _id: id } );
+        return result;
     };
 
 };
