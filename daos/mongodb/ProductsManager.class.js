@@ -1,35 +1,39 @@
 
 
 import mongoose from 'mongoose';
-import { productsModel } from './models/products.model';
+import dotenv from 'dotenv';
 
+import { productsModel } from '../mongodb/models/products.model.js';
+
+dotenv.config();
+const uri = process.env.MONGODB_URI;
 
 export default class ProductsManager {
 
-    connection = mongoose.connect( 'mongodb+srv://ferjencoder:XR05p6wWLPT9sS5B@digitalstore.sqxyq1o.mongodb.net/' );
+    connection = mongoose.connect( uri );
 
     async addProduct ( product ) {
-        let result = await productsModel.create( product );
+        const result = await productsModel.create( product );
         return result;
     };
 
     async getProducts ( num = null ) {
-        let result = await productsModel.find();
+        const result = await productsModel.find();
         return result;
     };
 
     async getProductById ( id ) {
-        let result = await productsModel.findOne( { _id: id } );
+        const result = await productsModel.findOne( { _id: id } );
         return result;
     };
 
     async getProductsByCategory ( category ) {
-        let result = await productsModel.find( category );
+        const result = await productsModel.find( category );
         return result;
     };
 
     async updateProduct ( id, productData ) {
-        let result = await productsModel.updateOne(
+        const result = await productsModel.updateOne(
             { _id: id },
             { $set: updateProduct }
         );
@@ -37,7 +41,7 @@ export default class ProductsManager {
     };
 
     async deleteProduct ( id ) {
-        let result = await productsModel.deleteOne( { _id: id } );
+        const result = await productsModel.deleteOne( { _id: id } );
         return result;
     };
 

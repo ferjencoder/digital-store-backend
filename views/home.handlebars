@@ -12,7 +12,45 @@
 
     <input id="textbox">
     <p id="texto"></p>
+
+    <section class="products-section">
+
+        <button class="btn-delete ff-secondary fs-3">
+            Show All Products
+        </button>
+
+        <ul class="products-list">
+
+            {{#each products}}
+
+            <li class='product-item' data-id='{{this.id}}'>
+                <img src="{{this.thumbnails.[0]}}" alt="Image of {{this.title}}" class='product-item__image' />
+
+                <div class='product-item__body'>
+                    <p class='ff-secondary fs-2 ls-1'>{{this.title}}</p>
+                    <p>{{this.category}}</p>
+                    <p>{{this.shortDescription}}</p>
+                    <p>Price: {{this.price}}</p>
+                </div>
+
+                <div class='product-item__buttons'>
+                    <button class='btn-edit ff-secondary fs-2'>
+                        Edit
+                    </button>
+                    <button class='btn-delete ff-secondary fs-2'>
+                        Delete
+                    </button>
+                </div>
+
+            </li>
+
+            {{/each}}
+
+        </ul>
+
+    </section>
 </div>
+
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/home.js"></script>

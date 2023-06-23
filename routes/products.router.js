@@ -1,7 +1,7 @@
 
 
 import { Router } from 'express';
-import ProductsManager from '../daos/mongodb/ProductsManager.class';
+import ProductsManager from '../daos/mongodb/ProductsManager.class.js';
 
 // import ProductsManager from '../classes/ProductsManager.class.js';
 
