@@ -3,41 +3,41 @@
 
 
 
-const deleteButton = document.querySelector( '.btn-delete' );
-deleteButton.addEventListener( 'click', async () => {
+// const deleteButton = document.querySelector( '.btn-delete' );
+// deleteButton.addEventListener( 'click', async () => {
 
-    try {
+//     try {
 
-        console.log( 'Delete' );
+//         console.log( 'Delete' );
 
-        await axios.delete( `/api/products/${product.id}` );
+//         await axios.delete( `/api/products/${product.id}` );
 
-        // You may want to remove the product from the front-end list here or reload the products
+//         // You may want to remove the product from the front-end list here or reload the products
 
-    } catch ( error ) {
-        console.error( error );
+//     } catch ( error ) {
+//         console.error( error );
 
-        // handle the error, maybe show an error message to the user
+//         // handle the error, maybe show an error message to the user
 
-    }
-} );
+//     }
+// } );
 
-const editButton = document.querySelector( '.btn-edit' );
-editButton.addEventListener( 'click', async () => {
+// const editButton = document.querySelector( '.btn-edit' );
+// editButton.addEventListener( 'click', async () => {
 
-    // gather the updated product data into a variable, let's say updatedProductData
+//     // gather the updated product data into a variable, let's say updatedProductData
 
-    try {
-        console.log( 'EDIT' );
+//     try {
+//         console.log( 'EDIT' );
 
-        const response = await axios.put( `/api/products/${product.id}`, updatedProductData );
-        const updatedProduct = response.data;
-        // handle the updated product, maybe show a success message to the user and update the product in the front-end list
-    } catch ( error ) {
-        console.error( error );
-        // handle the error, maybe show an error message to the user
-    }
-} );
+//         const response = await axios.put( `/api/products/${product.id}`, updatedProductData );
+//         const updatedProduct = response.data;
+//         // handle the updated product, maybe show a success message to the user and update the product in the front-end list
+//     } catch ( error ) {
+//         console.error( error );
+//         // handle the error, maybe show an error message to the user
+//     }
+// } );
 
 
 

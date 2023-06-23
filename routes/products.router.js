@@ -8,11 +8,6 @@ export const routerProducts = Router();
 
 const productManager = new ProductsManager();
 
-routerProducts.get( '/test', ( req, res ) => {
-    res.send( 'Test route' );
-} );
-
-
 routerProducts.get( '/api/products', async ( req, res ) => {
 
     try {

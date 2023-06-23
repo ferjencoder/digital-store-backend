@@ -7,6 +7,7 @@
 
             <form class="form-section" action="/api/products" method="post">
                 <input name="title" placeholder="Title" required />
+
                 <select name="category" required>
                     <option value="">
                         Select a category
@@ -17,6 +18,7 @@
                     </option>
                     {{/each}}
                 </select>
+
                 <input name="code" placeholder="Code" required />
                 <input name="demoUrl" placeholder="Demo URL" required />
                 <input name="shortDescription" placeholder="Short Description" required />
@@ -84,10 +86,11 @@
 
 </main>
 
-<script src="/socket.io/socket.io.js"></script>
-<script>
-    const socket = io();
 
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realTimeProducts.js"></script>
+{{!--
+<script>
     document.querySelector( '.form-section' ).addEventListener( 'submit', ( event ) => {
         event.preventDefault();
 
@@ -146,4 +149,4 @@
 
     } );
 
-</script>
+</script> --}}

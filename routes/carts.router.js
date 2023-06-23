@@ -17,6 +17,7 @@ routerCart.post( '/api/carts/', async ( req, res ) => {
         res.status( 500 ).json( { error: 'Failed to create cart' } );
     }
 } );
+
 // GET /api/carts/
 routerCart.get( '/api/carts/', async ( req, res ) => {
     try {

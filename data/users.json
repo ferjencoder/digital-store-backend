@@ -1,23 +1,200 @@
 [
 	{
+		"name": "Bruce Willis",
+		"email": "bruce.willis@example.com",
+		"password": "123",
+		"role": "employee",
 		"id": 1,
-		"name": "Jane Smith",
-		"email": "jane@example.com",
-		"password": "123",
-		"role": "admin"
+		"userImg": "https://example.com/bruce-willis.jpg",
+		"userName": "johnmcclane"
 	},
 	{
+		"name": "Angelina Jolie",
+		"email": "angelina.jolie@example.com",
+		"password": "123",
+		"role": "employee",
 		"id": 2,
-		"name": "John Doe",
-		"email": "john@example.com",
-		"password": "123",
-		"role": "user"
+		"userImg": "https://example.com/angelina-jolie.jpg",
+		"userName": "laracroft"
 	},
 	{
-		"name": "Fer Jen",
-		"email": "fer@example.com",
+		"name": "Jason Statham",
+		"email": "jason.statham@example.com",
+		"password": "123",
+		"role": "employee",
+		"id": 3,
+		"userImg": "https://example.com/jason-statham.jpg",
+		"userName": "deckardshaw"
+	},
+	{
+		"name": "Scarlett Johansson",
+		"email": "scarlett.johansson@example.com",
+		"password": "123",
+		"role": "employee",
+		"id": 4,
+		"userImg": "https://example.com/scarlett-johansson.jpg",
+		"userName": "blackwidow"
+	},
+	{
+		"name": "Sylvester Stallone",
+		"email": "sylvester.stallone@example.com",
+		"password": "123",
+		"role": "employee",
+		"id": 5,
+		"userImg": "https://example.com/sylvester-stallone.jpg",
+		"userName": "rockybalboa"
+	},
+	{
+		"name": "Tom Cruise",
+		"email": "tom.cruise@example.com",
+		"password": "123",
+		"role": "admin",
+		"id": 6,
+		"userImg": "https://example.com/tom-cruise.jpg",
+		"userName": "ethanhunt"
+	},
+	{
+		"name": "Dwayne Johnson",
+		"email": "dwayne.johnson@example.com",
+		"password": "123",
+		"role": "admin",
+		"id": 7,
+		"userImg": "https://example.com/dwayne-johnson.jpg",
+		"userName": "therock"
+	},
+	{
+		"name": "Brad Pitt",
+		"email": "brad.pitt@example.com",
 		"password": "123",
 		"role": "user",
-		"id": 3
+		"id": 8,
+		"userImg": "https://example.com/brad-pitt.jpg",
+		"userName": "tylerdurden"
+	},
+	{
+		"name": "Jennifer Lawrence",
+		"email": "jennifer.lawrence@example.com",
+		"password": "123",
+		"role": "user",
+		"id": 9,
+		"userImg": "https://example.com/jennifer-lawrence.jpg",
+		"userName": "katnisseverdeen"
+	},
+	{
+		"name": "Chris Hemsworth",
+		"email": "chris.hemsworth@example.com",
+		"password": "123",
+		"role": "user",
+		"id": 10,
+		"userImg": "https://example.com/chris-hemsworth.jpg",
+		"userName": "thor"
+	},
+	{
+		"name": "Vin Diesel",
+		"email": "vin.diesel@example.com",
+		"password": "123",
+		"role": "user",
+		"id": 11,
+		"userImg": "https://example.com/vin-diesel.jpg",
+		"userName": "domtoretto"
+	},
+	{
+		"name": "Robert Downey Jr.",
+		"email": "robert.downey@example.com",
+		"password": "123",
+		"role": "user",
+		"id": 12,
+		"userImg": "https://example.com/robert-downey-jr.jpg",
+		"userName": "ironman"
+	},
+	{
+		"name": "Will Smith",
+		"email": "will.smith@example.com",
+		"password": "123",
+		"role": "user",
+		"id": 13,
+		"userImg": "https://example.com/will-smith.jpg",
+		"userName": "agentj"
+	},
+	{
+		"name": "Liam Neeson",
+		"email": "liam.neeson@example.com",
+		"password": "123",
+		"role": "user",
+		"id": 14,
+		"userImg": "https://example.com/liam-neeson.jpg",
+		"userName": "bryanmills"
+	},
+	{
+		"name": "Gal Gadot",
+		"email": "gal.gadot@example.com",
+		"password": "123",
+		"role": "user",
+		"id": 15,
+		"userImg": "https://example.com/gal-gadot.jpg",
+		"userName": "wonderwoman"
+	},
+	{
+		"name": "Chris Evans",
+		"email": "chris.evans@example.com",
+		"password": "123",
+		"role": "user",
+		"id": 16,
+		"userImg": "https://example.com/chris-evans.jpg",
+		"userName": "captain"
+	},
+	{
+		"name": "Keanu Reeves",
+		"email": "keanu.reeves@example.com",
+		"password": "123",
+		"role": "user",
+		"id": 17,
+		"userImg": "https://example.com/keanu-reeves.jpg",
+		"userName": "neo"
+	},
+	{
+		"name": "Tom Hardy",
+		"email": "tom.hardy@example.com",
+		"password": "123",
+		"role": "user",
+		"id": 18,
+		"userImg": "https://example.com/tom-hardy.jpg",
+		"userName": "bane"
+	},
+	{
+		"name": "Natalie Portman",
+		"email": "natalie.portman@example.com",
+		"password": "123",
+		"role": "user",
+		"id": 19,
+		"userImg": "https://example.com/natalie-portman.jpg",
+		"userName": "padme"
+	},
+	{
+		"name": "Hugh Jackman",
+		"email": "hugh.jackman@example.com",
+		"password": "123",
+		"role": "user",
+		"id": 20,
+		"userImg": "https://example.com/hugh-jackman.jpg",
+		"userName": "wolverine"
+	},
+	{
+		"id": 21,
+		"name": "Marcelo Brown",
+		"email": "marcelo.brown@example.com",
+		"password": "123",
+		"role": "admin",
+		"userImg": "https://images.unsplash.com/photo-1614289371518-722f2615943d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+		"userName": "lover"
+	},
+	{
+		"id": 22,
+		"name": "Marcelo Brown",
+		"email": "marcelo.brown@example.com",
+		"password": "123",
+		"role": "admin",
+		"userImg": "https://images.unsplash.com/photo-1614289371518-722f2615943d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+		"userName": "lover"
 	}
 ]

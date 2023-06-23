@@ -1,0 +1,41 @@
+<main class="main-login-container">
+    <section class='login-section'>
+        <img class='login-img'
+            src="https://res.cloudinary.com/ferjen/image/upload/v1685035773/digital-store/llamas/1-Default_full_body_shot_of_a_cute_sly_llama_with_long_neck_a_mi_0_784d1076-b442-480a-84ef-39e34d96b415_0_h7ixgn.png"
+            alt="Raibow Llama" />
+
+        <div class="container login-container">
+            <div class="row">
+                <div class="col-md-6 login-form-1">
+                    <h3 class='ff-secondary fs-4 ls-1'>digital store</h3>
+
+                    <form id="login-form" action="/api/login" method="post">
+                        <div class="form-group mb-2">
+                            <input type="text" name="email" placeholder="Email" required />
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="password" name="password" placeholder="Password" required />
+                        </div>
+                        <div class="d-grid gap-2 btn-container">
+                            <button type="submit" class="btn-success ff-secondary fs-2 fc-black">
+                                LOGIN
+                            </button>
+                            <a href="/auth/register">
+                                <button class="btn-delete ff-secondary fs-2 fc-black" value="Register">
+                                    register
+                                </button>
+                            </a>
+                        </div>
+                    </form>
+
+                    {{#if error}}
+                    <div class='fc-danger'>{{error}}</div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/login.js"></script>

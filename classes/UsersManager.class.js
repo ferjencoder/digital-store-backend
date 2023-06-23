@@ -2,10 +2,13 @@
 
 import path from 'path';
 import fs from 'fs';
-import __dirname from '../utils.js';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath( import.meta.url );
+const __dirname = dirname( __filename );
 
 const USERS_FILE_PATH = path.resolve( __dirname, '../data/users.json' );
-
 
 export default class UsersManager {
 
@@ -23,19 +26,33 @@ export default class UsersManager {
     };
 
     async createUser ( info ) {
+        const { name, email, password, role, userImg, userName } = info;
 
-        const users = await this.getUsers();
-
-        // Check if the file is created
-        if ( users.length === 0 ) {
-            info.id = 1;
-        } else {
-            info.id = users[ users.length - 1 ].id + 1;
+        if ( !name || !email || !password || !role || !userImg || !userName ) {
+            throw new Error(
+                'Missing user mandatory info (name, email, password, role, userImg, userName)'
+            );
         }
 
-        users.push( info );
-        await fs.promises.writeFile( USERS_FILE_PATH, JSON.stringify( users, null, '\t' ) );
-    };
+        const users = await this.getUsers();
+        const newUser = {
+            id: Math.max( ...users.map( ( user ) => user.id ) ) + 1,
+            name,
+            email,
+            password,
+            role,
+            userImg,
+            userName,
+        };
+
+        users.push( newUser );
+        await fs.promises.writeFile(
+            USERS_FILE_PATH,
+            JSON.stringify( users, null, '\t' )
+        );
+        return newUser;
+    }
+
 
     async deleteUser ( id ) {
 
@@ -70,7 +87,6 @@ export default class UsersManager {
         }
 
         console.log( 'logged in!' );
-
 
         return user;
     };

@@ -10,28 +10,18 @@ const categoriesManager = new CategoriesManager();
 const productsManager = new ProductsManager();
 
 router.get( '/', async ( req, res ) => {
+
     try {
         const categories = await categoriesManager.getCategories();
         const products = await productsManager.getProducts();
         res.render( 'realTimeProducts', { categories, products } );
+
     } catch ( error ) {
         // handle error
         console.error( error );
         res.status( 500 ).send( 'Internal server error' );
+
     }
 } );
 
-// router.get( '/', async ( req, res ) => {
-//     try {
-//         const categories = await categoriesManager.getCategories();
-//         const products = await productsManager.getProducts();
-//         res.render( 'productManager', { categories, products } );
-//     } catch ( error ) {
-//         // handle error
-//         console.error( error );
-//         res.status( 500 ).send( 'Internal server error' );
-//     }
-// } );
-
 export default router;
-
