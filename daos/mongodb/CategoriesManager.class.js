@@ -40,7 +40,7 @@ export default class CategoriesManager {
 
     async getCategories () {
 
-        const result = await categoriesModel.find();
+        const result = await categoriesModel.find().lean();
         return result;
 
     };

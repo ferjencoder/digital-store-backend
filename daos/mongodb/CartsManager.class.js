@@ -43,7 +43,7 @@ export default class CartsManager {
 
     async getCarts () {
 
-        const result = await cartsModel.find();
+        const result = await cartsModel.find().lean();
         return result;
 
     };

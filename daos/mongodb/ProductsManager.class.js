@@ -36,7 +36,7 @@ export default class ProductsManager {
     };
 
     async getProducts ( num = null ) {
-        const result = await productsModel.find();
+        const result = await productsModel.find().lean();
         return result;
     };
 

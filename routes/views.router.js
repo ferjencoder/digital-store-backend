@@ -1,8 +1,8 @@
 
 
-import { Router } from 'express';
 // import CategoriesManager from '../classes/CategoriesManager.class.js';
 // import ProductsManager from '../classes/ProductsManager.class.js';
+import { Router } from 'express';
 import CategoriesManager from '../daos/mongodb/CategoriesManager.class.js';
 import ProductsManager from '../daos/mongodb/ProductsManager.class.js';
 
@@ -18,17 +18,31 @@ router.get( '/', async ( req, res ) => {
 
         const categories = await categoriesManager.getCategories();
         const products = await productsManager.getProducts();
-        res.render( 'realTimeProducts', { categories, products } );
-        // res.render( 'home', {
-        //     title: "Inicio",
-        //     products: products
-        // } )
+
+        const handlebarsOptions = {
+            allowProtoPropertiesByDefault: true,
+            allowProtoMethodsByDefault: true
+        };
+
+        res.render( 'realTimeProducts', { categories, products, handlebarsOptions } );
 
     } catch ( error ) {
 
         console.error( error );
         res.status( 500 ).send( 'Internal server error' );
 
+    }
+} );
+
+router.get( '/realtimeproducts', async ( req, res ) => {
+    try {
+        const categories = await categoriesManager.getCategories();
+        console.log( "Categories Data:", categories );
+        const products = await productsManager.getProducts();
+        res.render( 'realTimeProducts', { categories, products } );
+    } catch ( error ) {
+        console.error( error );
+        res.status( 500 ).send( 'Internal server error' );
     }
 } );
 

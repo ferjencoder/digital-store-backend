@@ -16,6 +16,7 @@ routerProducts.get( '/api/products', async ( req, res ) => {
         const limit = req.query.limit;
         const products = await productManager.getProducts( limit );
         res.status( 200 ).json( products );
+        // res.send( { status: 'success' } );
 
     } catch ( error ) {
         console.error( error );
@@ -44,8 +45,13 @@ routerProducts.get( '/api/products/:pid', async ( req, res ) => {
 routerProducts.post( '/api/products', async ( req, res ) => {
 
     try {
-        const newProduct = await productManager.addProduct( req.body );
-        res.status( 201 ).json( newProduct );
+        let newProduct = req.body;
+        await productManager.addProduct( newProduct );
+
+        const products = await productManager.getProducts();
+
+        req.socketServer.sockets.emit( 'update-products', products );
+        res.send( { status: 'successfull' } );
 
     } catch ( error ) {
         console.error( error );
