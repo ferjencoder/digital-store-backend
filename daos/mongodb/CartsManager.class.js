@@ -12,7 +12,25 @@ const uri = process.env.MONGODB_URI;
 
 export default class CartsManager {
 
-    connection = mongoose.connect( uri );
+    // connection = mongoose.connect( uri );
+
+    constructor() {
+        this.connectToDatabase();
+    }
+
+    connectToDatabase () {
+        mongoose
+            .connect( uri, {
+                useNewUrlParser: true,
+                useUnifiedTopology: true,
+            } )
+            .then( () => {
+                console.log( 'Connected to MongoDB' );
+            } )
+            .catch( ( error ) => {
+                console.error( 'Error connecting to MongoDB:', error );
+            } );
+    }
 
     productsManager = new ProductsManager();
 
@@ -32,7 +50,7 @@ export default class CartsManager {
 
     async getCartById ( id ) {
 
-        const result = await cartsModel.findOne( { _id: id } );
+        const result = await cartsModel.findOne( { _id: id } ).populate( 'products.product' );
         return result;
 
     };

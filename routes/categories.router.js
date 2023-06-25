@@ -1,7 +1,9 @@
 
 
 import { Router } from 'express';
-import CategoriesManager from '../classes/CategoriesManager.class.js';
+// import CategoriesManager from '../classes/CategoriesManager.class.js';
+import CategoriesManager from '../daos/mongodb/CategoriesManager.class.js';
+
 
 export const routerCategories = Router();
 const categoriesManager = new CategoriesManager();

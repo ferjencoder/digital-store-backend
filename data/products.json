@@ -1,116 +1,5 @@
 [
 	{
-		"id": 28,
-		"title": "NEWWBIE",
-		"category": "Digital Menus",
-		"code": "WQEQWE",
-		"shortDescription": "NEWWBIE",
-		"description": "NEWWBIE",
-		"thumbnails": "https://images.unsplash.com/photo-1685502659945-721d57e46b4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=694&q=80",
-		"demoUrl": "https://images.unsplash.com/photo-1685502659945-721d57e46b4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=694&q=80",
-		"techStack": "NEWWBIE",
-		"stock": "1",
-		"price": "1500"
-	},
-	{
-		"id": 27,
-		"title": "NEWWBIE",
-		"category": "Digital Menus",
-		"code": "WQEQWE",
-		"shortDescription": "NEWWBIE",
-		"description": "NEWWBIE",
-		"thumbnails": "https://images.unsplash.com/photo-1685502659945-721d57e46b4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=694&q=80",
-		"demoUrl": "https://images.unsplash.com/photo-1685502659945-721d57e46b4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=694&q=80",
-		"techStack": "NEWWBIE",
-		"stock": "1",
-		"price": "5000"
-	},
-	{
-		"id": 26,
-		"title": "NEWWBIE",
-		"category": "Digital Menus",
-		"code": "WQEQWE",
-		"shortDescription": "NEWWBIE",
-		"description": "NEWWBIE",
-		"thumbnails": "https://images.unsplash.com/photo-1685502659945-721d57e46b4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=694&q=80",
-		"demoUrl": "https://images.unsplash.com/photo-1685502659945-721d57e46b4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=694&q=80",
-		"techStack": "NEWWBIE",
-		"stock": "1",
-		"price": "5000"
-	},
-	{
-		"id": 25,
-		"title": "oke para empezar",
-		"category": "Data Analysis",
-		"code": "WQEQWE",
-		"shortDescription": "WebTest 1",
-		"description": "WebTest 35",
-		"thumbnails": [
-			"https://images.pexels.com/photos/1854652/pexels-photo-1854652.jpeg?cs=srgb&dl=slice-cake-1854652.jpg&fm=jpg"
-		],
-		"demoUrl": "https://images.unsplash.com/photo-1685502659945-721d57e46b4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=694&q=80",
-		"techStack": "WebTest 35",
-		"stock": "1",
-		"price": "5000"
-	},
-	{
-		"id": 24,
-		"title": "WebTest 1",
-		"category": "Customer Service",
-		"code": "WebTest 1",
-		"shortDescription": "WebTest 1",
-		"description": "WebTest 35",
-		"thumbnails": "https://images.pexels.com/photos/1854652/pexels-photo-1854652.jpeg?cs=srgb&dl=slice-cake-1854652.jpg&fm=jpg",
-		"demoUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqHH?ver=728b",
-		"techStack": "WebTest 1",
-		"stock": "1500",
-		"price": "1500"
-	},
-	{
-		"id": 23,
-		"title": "WebTest 35",
-		"category": "Customer Service",
-		"code": "WQEQWE",
-		"shortDescription": "WebTest 35",
-		"description": "WebTest 35",
-		"thumbnails": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqHH?ver=728b",
-		"demoUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqHH?ver=728b",
-		"techStack": "WebTest 35",
-		"stock": "1500",
-		"price": "1500"
-	},
-	{
-		"id": 22,
-		"title": "WebTest 1",
-		"category": "Digital Menus",
-		"code": "WebTest 1",
-		"shortDescription": "WebTest 1",
-		"description": "WebTest 1",
-		"thumbnails": [
-			"https://images.unsplash.com/photo-1685502659945-721d57e46b4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=694&q=80"
-		],
-		"demoUrl": "https://images.unsplash.com/photo-1685502659945-721d57e46b4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=694&q=80",
-		"techStack": "WebTest 1",
-		"stock": "1",
-		"price": "1500"
-	},
-	{
-		"id": 21,
-		"title": "NEWWBIE",
-		"category": "Data Analysis",
-		"code": "WQEQWE",
-		"shortDescription": "WebTest 1",
-		"description": "WebTest 1",
-		"thumbnails": [
-			"https://images.pexels.com/photos/1854652/pexels-photo-1854652.jpeg?cs=srgb&dl=slice-cake-1854652.jpg&fm=jpg"
-		],
-		"demoUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqHH?ver=728b",
-		"techStack": "WebTest 1",
-		"stock": "1",
-		"price": "5000"
-	},
-	{
-		"id": 20,
 		"title": "E-Learning Platform",
 		"category": "Education",
 		"code": "code",
@@ -132,7 +21,6 @@
 		"rating": 4.9
 	},
 	{
-		"id": 19,
 		"title": "Virtual Tour Creator",
 		"category": "Multimedia",
 		"code": "code",
@@ -154,7 +42,6 @@
 		"rating": 4.6
 	},
 	{
-		"id": 18,
 		"title": "Membership Management System",
 		"category": "Management",
 		"code": "code",
@@ -176,7 +63,6 @@
 		"rating": 4.8
 	},
 	{
-		"id": 17,
 		"title": "HR Management Software",
 		"category": "Management",
 		"code": "code",
@@ -198,7 +84,6 @@
 		"rating": 4.7
 	},
 	{
-		"id": 16,
 		"title": "Data Analytics Tool",
 		"category": "Data Analysis",
 		"code": "code",
@@ -220,7 +105,6 @@
 		"rating": 4.5
 	},
 	{
-		"id": 15,
 		"title": "Customer Support System",
 		"category": "Customer Service",
 		"code": "code",
@@ -242,7 +126,6 @@
 		"rating": 4.6
 	},
 	{
-		"id": 14,
 		"title": "Project Management Tool",
 		"category": "Management",
 		"code": "code",
@@ -264,7 +147,6 @@
 		"rating": 4.6
 	},
 	{
-		"id": 13,
 		"title": "Accounting and Invoicing Software",
 		"category": "Finance",
 		"code": "code",
@@ -286,7 +168,6 @@
 		"rating": 4.5
 	},
 	{
-		"id": 12,
 		"title": "Online Retail Platform",
 		"category": "E-commerce",
 		"code": "code",
@@ -308,7 +189,6 @@
 		"rating": 4.7
 	},
 	{
-		"id": 11,
 		"title": "Digital Marketing Management Tool",
 		"category": "Marketing",
 		"code": "code",
@@ -330,7 +210,6 @@
 		"rating": 4.6
 	},
 	{
-		"id": 10,
 		"title": "Telehealth Platform",
 		"category": "Healthcare",
 		"code": "code",
@@ -352,7 +231,6 @@
 		"rating": 4.6
 	},
 	{
-		"id": 9,
 		"title": "Electronic Health Records (EHR) System",
 		"category": "Healthcare",
 		"code": "code",
@@ -373,7 +251,6 @@
 		"rating": 4.9
 	},
 	{
-		"id": 8,
 		"title": "Appointment Scheduling Software for Chiropractors",
 		"category": "Healthcare",
 		"code": "code",
@@ -395,7 +272,6 @@
 		"rating": 4.8
 	},
 	{
-		"id": 7,
 		"title": "Healthy Eating and Allergen Alert App",
 		"category": "Health and Nutrition",
 		"code": "code",
@@ -417,7 +293,6 @@
 		"rating": 4.7
 	},
 	{
-		"id": 6,
 		"title": "POS Integration",
 		"category": "Point-of-Sale System",
 		"code": "code",
@@ -439,7 +314,6 @@
 		"rating": 4.6
 	},
 	{
-		"id": 5,
 		"title": "Staff Management Software",
 		"category": "Management System",
 		"code": "code",
@@ -461,7 +335,6 @@
 		"rating": 4.5
 	},
 	{
-		"id": 4,
 		"title": "Digital Menu Boards and Ordering Systems",
 		"category": "Digital Menus",
 		"code": "code",
@@ -483,7 +356,6 @@
 		"rating": 4.8
 	},
 	{
-		"id": 3,
 		"title": "Inventory Management System",
 		"category": "Management System",
 		"code": "code",
@@ -505,7 +377,6 @@
 		"rating": 4.7
 	},
 	{
-		"id": 2,
 		"title": "Online Ordering and Delivery Platform",
 		"category": "E-commerce",
 		"code": "code",
@@ -527,7 +398,6 @@
 		"rating": 4.6
 	},
 	{
-		"id": 1,
 		"title": "Reservation Management System",
 		"category": "Management System",
 		"code": "code",
@@ -549,7 +419,6 @@
 		"rating": 4.5
 	},
 	{
-		"id": 29,
 		"title": "NEWWBIE",
 		"category": "E-commerce",
 		"code": "WQEQWE",

@@ -10,7 +10,25 @@ const uri = process.env.MONGODB_URI;
 
 export default class ProductsManager {
 
-    connection = mongoose.connect( uri );
+    // connection = mongoose.connect( uri );
+
+    constructor() {
+        this.connectToDatabase();
+    }
+
+    connectToDatabase () {
+        mongoose
+            .connect( uri, {
+                useNewUrlParser: true,
+                useUnifiedTopology: true,
+            } )
+            .then( () => {
+                console.log( 'Connected to MongoDB' );
+            } )
+            .catch( ( error ) => {
+                console.error( 'Error connecting to MongoDB:', error );
+            } );
+    }
 
     async addProduct ( product ) {
         const result = await productsModel.create( product );
@@ -35,7 +53,7 @@ export default class ProductsManager {
     async updateProduct ( id, productData ) {
         const result = await productsModel.updateOne(
             { _id: id },
-            { $set: updateProduct }
+            { $set: productData }
         );
         return result;
     };

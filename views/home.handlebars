@@ -4,11 +4,13 @@
 
     {{!-- TODO: Debe contener una lista con todos los productos agregados hasta el momento --}}
 
-    {{#each categories}}
-    <option value="{{this}}">
-        {{this}}
-    </option>
-    {{/each}}
+    <select>
+        {{#each categories}}
+        <option value="{{this.name}}">
+            {{this.name}}
+        </option>
+        {{/each}}
+    </select>
 
     <input id="textbox">
     <p id="texto"></p>
@@ -23,7 +25,7 @@
 
             {{#each products}}
 
-            <li class='product-item' data-id='{{this.id}}'>
+            <li class='product-item' data-id='{{this._id}}'>
                 <img src="{{this.thumbnails.[0]}}" alt="Image of {{this.title}}" class='product-item__image' />
 
                 <div class='product-item__body'>

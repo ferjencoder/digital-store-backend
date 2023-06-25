@@ -26,7 +26,7 @@ const ProductsSchema = new mongoose.Schema( {
         required: true
     },
     thumbnails: {
-        type: String,
+        type: [ String ],
         required: true
     },
     demoUrl: {

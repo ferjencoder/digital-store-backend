@@ -6,11 +6,12 @@ const collection = "categories";
 
 const CategoriesSchema = new mongoose.Schema( {
 
-    category: {
+    name: {
         type: String,
         required: true
-    }
+    },
 
 } );
+
 
 export const categoriesModel = mongoose.model( collection, CategoriesSchema );

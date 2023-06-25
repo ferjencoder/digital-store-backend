@@ -1,9 +1,9 @@
 
 
 import { Router } from 'express';
-// TODO: update CategoriesManager.class.js to use mongoDB
-import CategoriesManager from '../classes/CategoriesManager.class.js';
+// import CategoriesManager from '../classes/CategoriesManager.class.js';
 // import ProductsManager from '../classes/ProductsManager.class.js';
+import CategoriesManager from '../daos/mongodb/CategoriesManager.class.js';
 import ProductsManager from '../daos/mongodb/ProductsManager.class.js';
 
 

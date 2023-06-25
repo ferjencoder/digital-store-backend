@@ -13,8 +13,8 @@
                         Select a category
                     </option>
                     {{#each categories}}
-                    <option value="{{this}}">
-                        {{this}}
+                    <option value="{{this.name}}">
+                        {{this.name}}
                     </option>
                     {{/each}}
                 </select>
@@ -56,7 +56,7 @@
 
                 {{#each products}}
 
-                <li class='product-item' data-id='{{this.id}}'>
+                <li class='product-item' data-id='{{this._id}}'>
                     <img src="{{this.thumbnails.[0]}}" alt="Image of {{this.title}}" class='product-item__image' />
 
                     <div class='product-item__body'>

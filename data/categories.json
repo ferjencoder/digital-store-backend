@@ -1,14 +1,41 @@
 [
-    "Customer Service",
-    "Data Analysis",
-    "Digital Menus",
-    "E-commerce",
-    "Education",
-    "Finance",
-    "Health and Nutrition",
-    "Healthcare",
-    "Management System",
-    "Marketing",
-    "Multimedia",
-    "Point-of-Sale System"
+    {
+        "name": "Education"
+    },
+    {
+        "name": "Multimedia"
+    },
+    {
+        "name": "Management"
+    },
+    {
+        "name": "Data Analysis"
+    },
+    {
+        "name": "Customer Service"
+    },
+    {
+        "name": "Finance"
+    },
+    {
+        "name": "E-commerce"
+    },
+    {
+        "name": "Marketing"
+    },
+    {
+        "name": "Healthcare"
+    },
+    {
+        "name": "Health and Nutrition"
+    },
+    {
+        "name": "Point-of-Sale System"
+    },
+    {
+        "name": "Digital Menus"
+    },
+    {
+        "name": "Management System"
+    }
 ]
