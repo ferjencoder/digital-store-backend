@@ -13,8 +13,20 @@ const productManager = new ProductsManager();
 routerProducts.get( '/api/products', async ( req, res ) => {
 
     try {
-        const limit = req.query.limit;
-        const products = await productManager.getProducts( limit );
+        const limit = Number( req.query.limit );
+        const page = Number( req.query.page );
+        const sort = req.query.sort;
+        const filter = req.query.filter;
+        const filterValue = req.query.filterValue;
+
+        const products = await productManager.getProducts(
+            limit,
+            page,
+            sort,
+            filter,
+            filterValue
+        );
+
         res.status( 200 ).json( products );
         // res.send( { status: 'success' } );
 
@@ -29,6 +41,7 @@ routerProducts.get( '/api/products/:pid', async ( req, res ) => {
 
     try {
         const product = await productManager.getProductById( req.params.pid );
+
         if ( !product ) {
             res.status( 404 ).send( { status: 'error', error: 'Product not found' } );
         } else {

@@ -1,42 +1,77 @@
 
 
-// import mongoose from 'mongoose';
-// import dotenv from 'dotenv';
-
 import { productsModel } from '../mongodb/models/products.model.js';
 
-// dotenv.config();
-// const uri = process.env.MONGODB_URI;
-
 export default class ProductsManager {
-
-    // connection = mongoose.connect( uri );
-
-    // constructor() {
-    //     this.connectToDatabase();
-    // }
-
-    // connectToDatabase () {
-    //     mongoose
-    //         .connect( uri, {
-    //             useNewUrlParser: true,
-    //             useUnifiedTopology: true,
-    //         } )
-    //         .then( () => {
-    //             console.log( 'Connected to MongoDB' );
-    //         } )
-    //         .catch( ( error ) => {
-    //             console.error( 'Error connecting to MongoDB:', error );
-    //         } );
-    // }
 
     async addProduct ( product ) {
         const result = await productsModel.create( product );
         return result;
     };
 
-    async getProducts ( num = null ) {
-        const result = await productsModel.find().lean();
+    // async getProducts (
+    //     limit = 10,
+    //     page = 1,
+    //     sort = 'price:asc',
+    //     filter = null,
+    //     filterValue = null
+    // ) {
+
+    //     let whereOptions = {};
+
+    //     if ( filter && filterValue ) {
+    //         whereOptions = { [ filter ]: filterValue };
+    //     }
+
+    //     // Split the sort parameter into field and order
+    //     const [ sortField, sortOrder ] = sort.split( ':' );
+    //     const sortOptions = { [ sortField ]: sortOrder === 'desc' ? -1 : 1 };
+
+    //     const result = await productsModel.paginate( whereOptions, {
+    //         limit: limit,
+    //         page: page,
+    //         sort: sortOptions
+    //     } );
+
+    //     console.log( result );
+
+    //     return result;
+    // }
+
+    async getProducts (
+        limit = 10,
+        page = 1,
+        sort = 'asc',
+        filter = null,
+        filterValue = null
+    ) {
+
+        let whereOptions = {};
+
+        if ( filter && filterValue ) {
+            whereOptions = { [ filter ]: filterValue };
+        }
+
+        // if ( filter != '' && filterValue != '' ) {
+        //     whereOptions = { [ filter ]: filterValue };
+        // }
+
+        // Determine the sort order
+        let sortOrder;
+        if ( sort === 'desc' ) {
+            sortOrder = -1;
+        } else {
+            sortOrder = 1; // Default to ascending if anything other than 'desc' is passed
+        }
+
+        const result = await productsModel.paginate( whereOptions,
+            {
+                limit: limit,
+                page: page,
+                sort: { price: sortOrder },
+            }
+        );
+
         return result;
     };
 
