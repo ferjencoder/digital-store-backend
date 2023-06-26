@@ -29,7 +29,7 @@
                     << Anterior</a>
                         {{/if}}
                         &nbsp;
-                        {{result.page}}
+                        {{result.page}} of {{result.totalPages}}
                         &nbsp;
                         {{#if result.hasNextPage}}
                         <a href="{{result.nextLink}}">Siguiente >></a>
@@ -49,7 +49,7 @@
 
             <ul class="products-list">
 
-                {{#each result}}
+                {{#each result.docs}}
 
                 <li class='product-item' data-id='{{this._id}}'>
                     <img src="{{this.thumbnails.[0]}}" alt="Image of {{this.title}}" class='product-item__image' />
