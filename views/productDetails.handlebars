@@ -1,0 +1,8 @@
+<main class="main-container">
+    <h1>{{product.title}}</h1>
+    <img src="{{product.thumbnails.[0]}}" alt="Image of {{product.title}}">
+    <p>Category: {{product.category}}</p>
+    <p>Description: {{product.description}}</p>
+    <p>Price: {{product.price}}</p>
+    <button class="add-to-cart" data-product-id="{{product._id}}">Add to Cart</button>
+</main>

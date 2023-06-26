@@ -45,6 +45,30 @@ routerCart.get( '/api/carts/:cid', async ( req, res ) => {
 
 } );
 
+// PUT /api/carts/:cid
+routerCart.put( '/api/carts/:cid', async ( req, res ) => {
+    try {
+        const { cid } = req.params;
+        const products = req.body.products; // Expecting an array of products in the request body
+
+        // Input validation (optional but recommended)
+        // if ( !Array.isArray( products ) ) {
+        //     return res.status( 400 ).json( { error: 'Expected an array of products' } );
+        // }
+
+        // Call the updateCart method from the CartsManager
+        const updatedCart = await cartsManager.updateCart( cid, products );
+
+        // Send the updated cart as a response
+        res.status( 200 ).json( updatedCart );
+
+    } catch ( error ) {
+        console.error( error );
+        res.status( 500 ).json( { error: 'Failed to update cart' } );
+    }
+} );
+
+
 // POST /api/carts/:cid/product/:pid
 routerCart.post( '/api/carts/:cid/product/:pid', async ( req, res ) => {
 

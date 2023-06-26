@@ -400,3 +400,16 @@ select {
     margin: 0;
     width: calc(100% - 1.5rem);
 }
+
+
+/* .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+} */
+
+.search-form__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

@@ -42,7 +42,7 @@ export default class CartsManager {
     };
 
     async deleteProductFromCart ( cartId, productId ) {
-
+        // Maybe use syntax like "this.productsManager.getProductById( productId );"
         const cart = await this.getCartById( cartId );
         cart.products.pull( productId );
         await cart.save();
@@ -51,7 +51,7 @@ export default class CartsManager {
     };
 
     async deleteAllProductsFromCart ( cartId ) {
-
+        // Maybe use syntax like "this.productsManager.getProductById( productId );"
         const cart = await this.getCartById( cartId );
         cart.products = [];
         await cart.save();
@@ -59,6 +59,47 @@ export default class CartsManager {
         return;
     };
 
+    async updateCart ( cartId, products ) {
+
+        try {
+
+            // Fetch the cart by ID
+            const cart = await this.getCartById( cartId );
+
+            // Check if the cart exists
+            if ( !cart ) {
+                throw new Error( 'Cart not found' );
+            }
+
+            // Update the products array
+            cart.products = products;
+
+            console.log( cart );
+
+            // Save the cart back to the database
+            await cart.save();
+
+            // Return the updated cart
+            return cart;
+
+        } catch ( error ) {
+            console.error( error );
+            throw new Error( 'Failed to update cart' );
+        }
+        // try {
+
+        //     const updatedCart = await cartsModel.findByIdAndUpdate(
+        //         { _id: cartId },
+        //         { $set: { products: products } }
+        //     );
+
+        //     return updatedCart;
+
+        // } catch ( error ) {
+        //     console.error( error );
+        //     throw new Error( 'Failed to update cart' );
+        // }
+    }
 };
 
 

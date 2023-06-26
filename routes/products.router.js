@@ -55,6 +55,25 @@ routerProducts.get( '/api/products/:pid', async ( req, res ) => {
 
 } );
 
+routerProducts.get( '/api/products/details/:pid', async ( req, res ) => {
+
+    try {
+
+        const product = await productManager.getProductById( req.params.pid );
+
+        if ( !product ) {
+            res.status( 404 ).send( { status: 'error', error: 'Product not found' } );
+        } else {
+            res.render( 'productDetails', { product: product } );
+        }
+
+    } catch ( error ) {
+        console.error( error );
+        res.status( 500 ).json( { status: 'error', error: 'Something went wrong' } );
+    }
+
+} );
+
 routerProducts.post( '/api/products', async ( req, res ) => {
 
     try {
