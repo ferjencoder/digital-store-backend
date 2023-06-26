@@ -37,7 +37,7 @@ router.get( '/', async ( req, res ) => {
 router.get( '/realtimeproducts', async ( req, res ) => {
     try {
         const categories = await categoriesManager.getCategories();
-        console.log( "Categories Data:", categories );
+
         const products = await productsManager.getProducts();
         res.render( 'realTimeProducts', { categories, products } );
     } catch ( error ) {

@@ -1,35 +1,35 @@
 
 
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+// import mongoose from 'mongoose';
+// import dotenv from 'dotenv';
 
 import { categoriesModel } from './models/categories.model.js';
 
 
-dotenv.config();
-const uri = process.env.MONGODB_URI;
+// dotenv.config();
+// const uri = process.env.MONGODB_URI;
 
 export default class CategoriesManager {
 
     // connection = mongoose.connect( uri );
 
-    constructor() {
-        this.connectToDatabase();
-    }
+    // constructor() {
+    //     this.connectToDatabase();
+    // }
 
-    connectToDatabase () {
-        mongoose
-            .connect( uri, {
-                useNewUrlParser: true,
-                useUnifiedTopology: true,
-            } )
-            .then( () => {
-                console.log( 'Connected to MongoDB' );
-            } )
-            .catch( ( error ) => {
-                console.error( 'Error connecting to MongoDB:', error );
-            } );
-    }
+    // connectToDatabase () {
+    //     mongoose
+    //         .connect( uri, {
+    //             useNewUrlParser: true,
+    //             useUnifiedTopology: true,
+    //         } )
+    //         .then( () => {
+    //             console.log( 'Connected to MongoDB' );
+    //         } )
+    //         .catch( ( error ) => {
+    //             console.error( 'Error connecting to MongoDB:', error );
+    //         } );
+    // }
 
     async createCategory ( category ) {
 

@@ -1,36 +1,37 @@
 
 
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
+import connectToDatabase from '../../utils/db.js';
 
 import { cartsModel } from '../mongodb/models/carts.model.js';
 import ProductsManager from './ProductsManager.class.js';
 
 
-dotenv.config();
-const uri = process.env.MONGODB_URI;
+// dotenv.config();
+// const uri = process.env.MONGODB_URI;
 
 export default class CartsManager {
 
     // connection = mongoose.connect( uri );
 
-    constructor() {
-        this.connectToDatabase();
-    }
+    // constructor() {
+    //     this.connectToDatabase();
+    // }
 
-    connectToDatabase () {
-        mongoose
-            .connect( uri, {
-                useNewUrlParser: true,
-                useUnifiedTopology: true,
-            } )
-            .then( () => {
-                console.log( 'Connected to MongoDB' );
-            } )
-            .catch( ( error ) => {
-                console.error( 'Error connecting to MongoDB:', error );
-            } );
-    }
+    // connectToDatabase () {
+    //     mongoose
+    //         .connect( uri, {
+    //             useNewUrlParser: true,
+    //             useUnifiedTopology: true,
+    //         } )
+    //         .then( () => {
+    //             console.log( 'Connected to MongoDB' );
+    //         } )
+    //         .catch( ( error ) => {
+    //             console.error( 'Error connecting to MongoDB:', error );
+    //         } );
+    // }
 
     productsManager = new ProductsManager();
 

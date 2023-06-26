@@ -23,8 +23,10 @@ form.addEventListener( 'submit', async ( e ) => {
 
     // Emit a 'new-product'
     socket.emit( 'new-product', product );
+
   } catch ( error ) {
     console.error( error );
+
   } finally {
     // Reset your form here
     form.reset();
