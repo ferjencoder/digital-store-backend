@@ -55,7 +55,7 @@ routerProducts.get( '/api/products/:pid', async ( req, res ) => {
 
 } );
 
-routerProducts.get( '/api/products/details/:pid', async ( req, res ) => {
+routerProducts.get( '/api/products-details/:pid', async ( req, res ) => {
 
     try {
 

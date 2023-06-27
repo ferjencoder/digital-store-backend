@@ -109,7 +109,7 @@ button {
 
 input {
     font-size: 1rem;
-    padding: 0.5em 0.8em;
+    padding: 1em 1.5em;
     background-color: var(--clr-black);
     border-radius: 0.25rem;
     border: 1px solid var(--clr-primary);
@@ -117,9 +117,9 @@ input {
 
 select {
     font-size: 1rem;
-    padding: 0.5em 0.8em;
+    padding: 1em 1.5em;
     background-color: var(--clr-black);
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     border: 1px solid var(--clr-primary);
 }
 
@@ -183,6 +183,8 @@ select {
     width: 20vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-content: center;
     gap: 1rem;
 }
 
@@ -194,7 +196,7 @@ input {
 
 .productsForm-section,
 select {
-    width: 20vw;
+    width: 22rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -297,6 +299,14 @@ select {
 
 .btn-success:hover {
     background-color: #2cb51a;
+}
+
+.btn-info {
+    background-color: var(--clr-info);
+}
+
+.btn-info:hover {
+    background-color: #45acdb;
 }
 
 /* font sizes */
@@ -412,4 +422,8 @@ select {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.pagination {
+    display: flex;
 }

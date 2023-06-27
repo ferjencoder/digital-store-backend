@@ -8,12 +8,13 @@
             <form class="search-form__form" method="get">
                 <input name="search" placeholder="Search" />
 
-                <select name="filter">
+                <select name="filterValue">
                     <option value="">Select a category</option>
                     {{#each categories}}
                     <option value="{{this.name}}">{{this.name}}</option>
                     {{/each}}
                 </select>
+                <input type="hidden" name="filter" value="category">
 
                 <input name="page" placeholder="Page" />
                 <input name="sort" placeholder="Sort" />
@@ -23,17 +24,21 @@
                 </button>
 
             </form>
-            <div>
+            <div class="pagination">
                 {{#if result.hasPrevPage}}
                 <a href="{{result.prevLink}}">
-                    << Anterior</a>
-                        {{/if}}
-                        &nbsp;
-                        {{result.page}} of {{result.totalPages}}
-                        &nbsp;
-                        {{#if result.hasNextPage}}
-                        <a href="{{result.nextLink}}">Siguiente >></a>
-                        {{/if}}
+                    <h4>
+                        << Previous </h4>
+                </a>
+                {{/if}}
+                &nbsp;
+                <h4>{{result.page}} of {{result.totalPages}}</h4>
+                &nbsp;
+                {{#if result.hasNextPage}}
+                <a href="{{result.nextLink}}">
+                    <h4> Next >></h4>
+                </a>
+                {{/if}}
             </div>
 
             <div>
@@ -64,12 +69,14 @@
                     </div>
 
                     <div class='product-item__buttons'>
-                        <button class='btn-edit ff-secondary fs-2'>
+                        <a href="/product-details/{{this._id}}">
+                            <button class='btn-info ff-secondary fs-2'>
+                                + info
+                            </button>
+                        </a>
+                        <button class='btn-success ff-secondary fs-2' onclick="addToCart('{{this._id}}')">
                             Add to cart
                         </button>
-                        {{!-- <button class='btn-delete ff-secondary fs-2'>
-                            Delete
-                        </button> --}}
                     </div>
 
                 </li>
