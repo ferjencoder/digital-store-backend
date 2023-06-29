@@ -32,6 +32,12 @@ connectToDatabase();
 // Set the port number
 const port = process.env.PORT || 8080;
 
+// Middleware
+app.use( cors() );
+app.use( express.json() );
+app.use( express.urlencoded( { extended: true } ) );
+app.use( express.static( path.join( __dirname, '/public' ) ) );
+
 // Start the server after the database connection is established
 mongoose.connection.once( 'open', () => {
   // Start the HTTP server
@@ -41,12 +47,6 @@ mongoose.connection.once( 'open', () => {
 
   // Initialize Socket.IO server
   const socketServer = new Server( httpServer );
-
-  // Middleware
-  app.use( cors() );
-  app.use( express.json() );
-  app.use( express.urlencoded( { extended: true } ) );
-  app.use( express.static( path.join( __dirname, '/public' ) ) );
 
   // Configure handlebars
   app.engine( 'handlebars', handlebars.engine( {

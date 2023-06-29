@@ -15,10 +15,12 @@
   "license": "ISC",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.5",
+    "connect-mongo": "^5.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.1.1",
     "express": "^4.18.2",
     "express-handlebars": "^7.0.7",
+    "express-session": "^1.17.3",
     "mongoose": "^7.3.1",
     "mongoose-paginate-v2": "^1.7.1",
     "socket.io": "^4.6.1",
