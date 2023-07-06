@@ -51,12 +51,7 @@ routerCart.put( '/api/carts/:cid', async ( req, res ) => {
         const { cid } = req.params;
         const products = req.body.products; // Expecting an array of products in the request body
 
-        // Input validation (optional but recommended)
-        // if ( !Array.isArray( products ) ) {
-        //     return res.status( 400 ).json( { error: 'Expected an array of products' } );
-        // }
-
-        // Call the updateCart method from the CartsManager
+        // Call the updateCart method from CartsManager
         const updatedCart = await cartsManager.updateCart( cid, products );
 
         // Send the updated cart as a response
@@ -86,6 +81,23 @@ routerCart.post( '/api/carts/:cid/product/:pid', async ( req, res ) => {
     };
 
 } );
+
+// routerCart.put( '/api/carts/:cid/product/:pid', async ( req, res ) => {
+
+//     try {
+//         console.log( req.params );
+
+//         const { cid, pid } = req.params;
+//         const cart = await cartsManager.addProductToCart( cid, pid );
+
+//         res.status( 201 ).json( cart );
+//         // res.json( cart );
+
+//     } catch ( error ) {
+//         res.status( 500 ).json( { error: 'Failed to add product to cart' } );
+//     };
+
+// } );
 
 // POST /api/carts/:cid/product/:pid
 routerCart.delete( '/api/carts/:cid/product/:pid', async ( req, res ) => {

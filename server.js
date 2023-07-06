@@ -3,6 +3,7 @@
 
 // Import required modules
 import express from 'express';
+import cookieParser from 'cookie-parser';
 import mongoose from 'mongoose';
 import handlebars from 'express-handlebars';
 import path from 'path';
@@ -11,6 +12,7 @@ import dotenv from 'dotenv';
 import { Server } from 'socket.io';
 import connectToDatabase from './utils/db.js';
 import __dirname from './utils/utils.js'
+
 
 import ProductsManager from './daos/mongodb/ProductsManager.class.js';
 import viewsRouter from './routes/views.router.js';
@@ -34,6 +36,7 @@ const port = process.env.PORT || 8080;
 
 // Middleware
 app.use( cors() );
+app.use( cookieParser() );
 app.use( express.json() );
 app.use( express.urlencoded( { extended: true } ) );
 app.use( express.static( path.join( __dirname, '/public' ) ) );
@@ -111,7 +114,12 @@ mongoose.connection.once( 'open', () => {
   } );
 
   // Register routers
-  app.use( '/', viewsRouter );
+  app.get( '/', ( req, res ) => {
+    res.render( 'login' );
+  } );
+
+  // app.use( '/', viewsRouter );
+  app.use( viewsRouter );
   app.use( routerLogin );
   app.use( routerCategories );
   app.use( routerCart );

@@ -1,0 +1,22 @@
+<main class="main-login-container">
+    <section class='login-section'>
+        <h1>Inyección de cookies</h1>
+        <form id="cookieForm">
+            <div class="form-group">
+                <label>Nombre</label>
+                <input name="name">
+            </div>
+            <br />
+            <div class="form-group">
+                <label>Correo electrónico</label>
+                <input type="email" name="email">
+                <input type="submit" hidden>
+            </div>
+        </form>
+        <button class="btn-success ff-secondary fs-2" onclick="getCookie()">
+            Obtener Cookie
+        </button>
+        </div>
+    </section>
+</main>
+<script src="/js/cookieSetter.js"></script>

@@ -389,6 +389,16 @@ select {
     /* width: calc(100% + 1.5rem); */
 }
 
+#cookieForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 0.5rem;
+    /* width: calc(100% + 1.5rem); */
+}
+
 .login-form-1 {
     display: flex;
     flex-direction: column;
